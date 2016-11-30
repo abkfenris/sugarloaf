@@ -8,6 +8,13 @@ common_css = Bundle(
     output='public/css/common.css'
 )
 
+dc_css = Bundle(
+    'css/vendor/dc.css',
+    'css/vendor/leaflet.css',
+    filters='cssmin',
+    output='public/css/dc.css'
+)
+
 common_js = Bundle(
     'js/vendor/jquery.min.js',
     'js/vendor/bootstrap.min.js',

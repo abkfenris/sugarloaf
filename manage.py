@@ -2,8 +2,9 @@
 
 import os
 
-from flask.ext.script import Manager, Server
-from flask.ext.script.commands import ShowUrls, Clean
+from flask_script import Manager, Server
+from flask_script.commands import ShowUrls, Clean
+from flask_migrate import Migrate, MigrateCommand
 from sugarloaf import create_app
 from sugarloaf.models import db, User
 
@@ -12,10 +13,13 @@ from sugarloaf.models import db, User
 env = os.environ.get('SUGARLOAF_ENV', 'dev')
 app = create_app('sugarloaf.settings.%sConfig' % env.capitalize())
 
+migrate = Migrate(app, db)
+
 manager = Manager(app)
 manager.add_command("server", Server())
 manager.add_command("show-urls", ShowUrls())
 manager.add_command("clean", Clean())
+manager.add_command('db', MigrateCommand)
 
 
 @manager.shell

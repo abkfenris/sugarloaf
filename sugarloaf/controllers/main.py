@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, flash, request, redirect, url_for
-from flask.ext.login import login_user, logout_user, login_required
+from flask_login import login_user, logout_user, login_required
 
 from sugarloaf.extensions import cache
 from sugarloaf.forms import LoginForm
@@ -12,6 +12,12 @@ main = Blueprint('main', __name__)
 @cache.cached(timeout=1000)
 def home():
     return render_template('index.html')
+
+
+@main.route('/snow')
+@cache.cached(timeout=1000)
+def snow():
+    return render_template('snow.html')
 
 
 @main.route("/login", methods=["GET", "POST"])
