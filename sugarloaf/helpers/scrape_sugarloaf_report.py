@@ -29,4 +29,7 @@ def report_reporter(soup):
     """Returns a string with the current Snow Reporter's name"""
     report_div = soup.find('div', {'class': 'daily-report'})
     reporter = report_div.find('div', {'class': 'signature'}).find('strong')
-    return reporter.contents[0]
+    try:
+        return reporter.contents[0]
+    except AttributeError:
+        return None
