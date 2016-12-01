@@ -49,6 +49,9 @@ class Area(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.Text)
 
+    def __repr__(self):
+        return '<Area {name}>'.format(name=self.name)
+
 
 class Trail(db.Model):
     __tablename__ = 'trails'
@@ -62,6 +65,9 @@ class Trail(db.Model):
 
     area_id = db.Column(db.Integer, db.ForeignKey('areas.id'))
     area = db.relationship('Area', backref=db.backref('trails', lazy='dynamic'))
+
+    def __repr__(self):
+        return '<Trail {name}>'.format(name=self.name)
 
 
 class TrailStatus(db.Model):
@@ -81,6 +87,7 @@ class Lift(db.Model):
     __tablename__ = 'lifts'
 
     id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.Text)
     dt = db.Column(db.DateTime)
     description = db.Column(db.Text)
     geom = db.Column(Geometry('LINESTRING', 4326))
@@ -90,6 +97,7 @@ class LiftStatus(db.Model):
     __tablename__ = 'lift_status'
 
     id = db.Column(db.Integer, primary_key=True)
+    dt = db.Column(db.DateTime)
     running = db.Column(db.Boolean)
     scheduled = db.Column(db.Boolean)
     hold = db.Column(db.Boolean)
@@ -103,6 +111,9 @@ class SnowReporter(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.Text)
+
+    def __repr__(self):
+        return '<SnowReporter {name}>'.format(name=self.name)
 
 
 class DailyReport(db.Model):

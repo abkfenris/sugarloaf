@@ -30,7 +30,6 @@ class TestConfig(Config):
     DEBUG = True
     DEBUG_TB_INTERCEPT_REDIRECTS = False
 
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + db_file.name
     SQLALCHEMY_ECHO = True
 
     CACHE_TYPE = 'null'

@@ -33,3 +33,8 @@ def report_reporter(soup):
         return reporter.contents[0]
     except AttributeError:
         return None
+
+
+def make_soup():
+    r = requests.get(URL)
+    return BeautifulSoup(r.content, 'lxml')

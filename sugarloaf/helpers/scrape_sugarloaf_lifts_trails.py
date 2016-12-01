@@ -84,7 +84,9 @@ def lift_name(lift):
     return lift.contents[0]
 
 
-statuses = {'open', 'closed'}
+statuses = {'open', 'closed', 'scheduled', 'hold'}
+
+
 def lift_status(lift):
     """Returns the lift status"""
     status = set(lift.attrs['class']).intersection(statuses)
@@ -113,11 +115,16 @@ def update_time(soup):
     return dateparser.parse(condition_time_string)
 
 
+def make_soup():
+    """Returns BeautifulSoup for lifts and trails"""
+    r = requests.get(URL)
+    return BeautifulSoup(r.content, 'lxml')
+
+
 if __name__ == '__main__':
     import json
 
-    r = requests.get(URL)
-    soup = BeautifulSoup(r.content, 'lxml')
+    soup = make_soup()
 
     trails = list(update_trails(soup))
 
