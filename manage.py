@@ -6,7 +6,7 @@ from flask_script import Manager, Server
 from flask_script.commands import ShowUrls, Clean
 from flask_migrate import Migrate, MigrateCommand
 from sugarloaf import create_app
-from sugarloaf.models import db, User
+from sugarloaf.models import db, User, Trail, TrailStatus, Lift, LiftStatus, SnowReporter, Area, DailyReport
 
 # default to dev config because no one should use this in
 # production anyway
@@ -28,7 +28,12 @@ def make_shell_context():
         in the context of the app
     """
 
-    return dict(app=app, db=db, User=User)
+    return dict(app=app, db=db, User=User, 
+                Trail=Trail, TrailStatus=TrailStatus, 
+                Lift=Lift, LiftStatus=LiftStatus,
+                Area=Area,
+                SnowReporter=SnowReporter,
+                DailyReport=DailyReport)
 
 
 @manager.command

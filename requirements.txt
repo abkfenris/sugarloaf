@@ -10,7 +10,7 @@ geoalchemy2==0.4.0
 psycopg2==2.6.2
 Flask-Script==2.0.5
 Flask-WTF==0.13.1
-Flask-Migrate==2.0.0
+Flask-Migrate==2.0.1
 
 # Other
 itsdangerous==0.24
@@ -20,6 +20,7 @@ requests==2.11.1
 beautifulsoup4==4.5.1
 dateparser==0.5.0
 lxml==3.6.4
+html2text==2016.9.19
 
 # Testing
 pytest==3.0.4

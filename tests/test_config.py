@@ -10,7 +10,7 @@ class TestConfig:
         app = create_app('sugarloaf.settings.DevConfig')
 
         assert app.config['DEBUG'] is True
-        assert app.config['SQLALCHEMY_DATABASE_URI'] == 'sqlite:///../database.db'
+        assert 'postgresql' in app.config['SQLALCHEMY_DATABASE_URI']
         assert app.config['CACHE_TYPE'] == 'null'
 
     def test_test_config(self):
@@ -27,5 +27,5 @@ class TestConfig:
 
         app = create_app('sugarloaf.settings.ProdConfig')
 
-        assert app.config['SQLALCHEMY_DATABASE_URI'] == 'sqlite:///../database.db'
+        assert 'postgresql' in app.config['SQLALCHEMY_DATABASE_URI']
         assert app.config['CACHE_TYPE'] == 'simple'
