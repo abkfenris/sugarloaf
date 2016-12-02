@@ -28,3 +28,7 @@ test:
 	docker-compose --project-name testing -f docker-compose.test.yml run wait
 	docker-compose --project-name testing -f docker-compose.test.yml run web py.test tests
 	docker-compose --project-name testing -f docker-compose.test.yml down
+
+up:
+	docker-compose up -d --build
+	docker-compose logs -f

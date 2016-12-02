@@ -16,11 +16,13 @@ Flask-Migrate==2.0.1
 itsdangerous==0.24
 cssmin==0.2.0
 jsmin==2.2.1
-requests==2.11.1
+requests==2.12.3
 beautifulsoup4==4.5.1
 dateparser==0.5.0
 lxml==3.6.4
 html2text==2016.9.19
+celery==4.0.0
+redis==2.10.5
 
 # Testing
 pytest==3.0.4

@@ -1,9 +1,30 @@
 import html2text
+from celery import Celery
+from flask import current_app
+from celery.task.schedules import crontab
+from celery.decorators import periodic_task
 
+from sugarloaf.settings import Config
 from sugarloaf.models import db, TrailStatus, LiftStatus, Lift, SnowReporter, DailyReport
 from sugarloaf.helpers.db import get_or_create_trail, get_or_create
 from sugarloaf.helpers.scrape_sugarloaf_lifts_trails import update_time, update_lifts, update_trails, make_soup
 import sugarloaf.helpers.scrape_sugarloaf_report as report_helper
+
+
+celery = Celery(__name__, broker=Config.CELERY_BROKER_URL)
+
+TaskBase = celery.Task
+
+class ContextTask(TaskBase):
+    abstract = True
+
+    def __call__(self, *args, **kwargs):
+        with current_app.app_context():
+            return TaskBase.__call__(self, *args, **kwargs)
+
+celery.Task = ContextTask
+
+
 
 def update_trail(trail, time):
     """Update a single trail"""
@@ -73,8 +94,16 @@ def update_report():
                                report=markdown)
 
 
-
+@celery.task
 def regular_update():
     """Kick off our regularly scheduled update"""
     update_trails_lifts()
     update_report()
+
+
+celery.conf.beat_schedule = {
+    'regular-update-15-min': {
+        'task': 'sugarloaf.tasks.regular_update',
+        'schedule': crontab(minute='*/15')
+    }
+}

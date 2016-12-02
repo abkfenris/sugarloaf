@@ -89,3 +89,5 @@ ENV/
 .ropeproject
 docker-data/postgis
 config.codekit3
+celerybeat-schedule.db
+celerybeat.pid

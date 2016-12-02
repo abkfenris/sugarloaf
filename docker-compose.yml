@@ -7,13 +7,28 @@ services:
         - ./docker-data/postgis:/var/lib/postgresql/data
         environment:
             PGDATA: /var/lib/postgresql/data/PGDATA
-    
-    web:
+    taskqueue:
+        image: redis:alpine
+
+    worker: &WORKER
+        build: .
+        command: "celery worker -A celery_worker.celery -l info"
+        links:
+        - postgis:postgis
+        - taskqueue:taskqueue
+        volumes:
+        - .:/usr/src/app
+        env_file:
+        - ./common.env
+        restart: always
+
+    web: #&WEB
         build: .
         expose:
         - "8000"
         links:
         - postgis:postgis
+        - taskqueue:taskqueue
         command: "python /usr/src/app/manage.py runserver -d -r -p 8000 --host=0.0.0.0" # auto reload testing
         volumes:
         - .:/usr/src/app
@@ -22,6 +37,12 @@ services:
         env_file:
         - ./common.env
     
+    beat:
+        <<: *WORKER
+        command: "celery beat -A celery_worker.celery -l info"
+    
+
+
     nginx:
         image: "nginx:alpine"
         volumes:

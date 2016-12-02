@@ -8,6 +8,7 @@ class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY', 
         'it7cF8RRo,sJMFcDna]wheyLLc2K>[7{ifRn,epLn^pXe/nx^AZbXpxePTWaT=fU')
     SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI')
+    CELERY_BROKER_URL = os.environ.get('CELERY_BROKER_URL')
 
 
 class ProdConfig(Config):
