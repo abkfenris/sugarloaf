@@ -14,9 +14,13 @@ def get_or_create(session, model, **kwargs):
         return instance
 
 
-def get_or_create_trail(session, trail_name, area_name):
+def get_or_create_trail(session, trail_name, area_name, trail_difficulty):
     trail = Trail.query.filter_by(name=trail_name).first()
     if trail:
+        if trail.difficulty != trail_difficulty:
+            trail.difficulty = trail_difficulty
+            session.add(trail)
+            session.commit()
         return trail
     else:
         area = get_or_create(session, Area, name=area_name)

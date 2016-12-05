@@ -13,6 +13,8 @@ Tracking trail and lift statuses at Sugarloaf Mountain.
 |               |                   |
 |               | |codeclimate|     |
 |               | |codebeat|        |
+|               |                   |
+|               | |landscape|       |
 +---------------+-------------------+
 | Requirements  | |requires.io|     |
 +---------------+-------------------+
@@ -39,6 +41,10 @@ Tracking trail and lift statuses at Sugarloaf Mountain.
 .. |codebeat| image:: https://codebeat.co/badges/02425cbb-5344-4091-81ae-8e100be6a23a
    :target: https://codebeat.co/projects/github-com-abkfenris-sugarloaf
    :alt: Codebeat
+
+.. |landscape| image:: https://landscape.io/github/abkfenris/sugarloaf/master/landscape.svg?style=flat
+   :target: https://landscape.io/github/abkfenris/sugarloaf/master
+   :alt: Code Health
 
 .. |requires.io| image:: https://requires.io/github/abkfenris/sugarloaf/requirements.svg?branch=master
    :target: https://requires.io/github/abkfenris/sugarloaf/requirements/?branch=master

@@ -3,9 +3,6 @@ import warnings
 import requests
 from bs4 import BeautifulSoup
 import dateparser
-import ruamel
-
-warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
 
 URL = 'http://sugarloaf.com/the-mountain/daily-report'
 

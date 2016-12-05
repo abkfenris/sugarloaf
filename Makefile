@@ -30,5 +30,6 @@ test:
 	docker-compose --project-name testing -f docker-compose.test.yml down
 
 up:
+	\rm -f celerybeat.pid
 	docker-compose up -d --build
 	docker-compose logs -f

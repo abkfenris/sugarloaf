@@ -60,6 +60,7 @@ class Trail(db.Model):
     name = db.Column(db.Text)
     geom = db.Column(Geometry('LINESTRING', 4326))
     description = db.Column(db.Text)
+    difficulty = db.Column(db.Text)
     osm_id = db.Column(db.BigInteger)
     current = db.Column(db.Boolean, default=True)
 

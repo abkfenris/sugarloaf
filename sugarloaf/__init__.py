@@ -9,6 +9,7 @@ from flask import Flask
 from webassets.loaders import PythonLoader as PythonAssetsLoader
 
 from sugarloaf.controllers.main import main
+from sugarloaf.controllers.api import api
 from sugarloaf import assets
 from sugarloaf.models import db
 
@@ -55,5 +56,6 @@ def create_app(object_name):
 
     # register our blueprints
     app.register_blueprint(main)
+    app.register_blueprint(api, url_prefix='/api')
 
     return app

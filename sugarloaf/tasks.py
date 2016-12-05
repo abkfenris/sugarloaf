@@ -28,7 +28,7 @@ celery.Task = ContextTask
 
 def update_trail(trail, time):
     """Update a single trail"""
-    t = get_or_create_trail(db.session, trail['name'], trail['area'])
+    t = get_or_create_trail(db.session, trail['name'], trail['area'], trail['difficulty'])
 
     status = get_or_create(db.session, TrailStatus,
                            dt=time, 
