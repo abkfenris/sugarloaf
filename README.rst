@@ -6,7 +6,7 @@ Tracking trail and lift statuses at Sugarloaf Mountain.
 +---------------+-------------------+
 | Test Status   | |semaphore|       |
 +---------------+-------------------+
-| Test Coverage |                   |
+| Test Coverage | |coveralls|       |
 +---------------+-------------------+
 | Code Health   | |quantifiedcode|  |
 |               | |scrutinizer|     |
@@ -22,9 +22,13 @@ Tracking trail and lift statuses at Sugarloaf Mountain.
 +---------------+-------------------+
 
 
-.. |semaphore| image:: https://semaphoreci.com/api/v1/fenris/sugarloaf/branches/master/badge.svg
+.. |semaphore| image:: https://semaphoreci.com/api/v1/fenris/sugarloaf/branches/master/shields_badge.svg
    :target: https://semaphoreci.com/fenris/sugarloaf
    :alt: SemaphoreCI Test status
+
+.. |coveralls| image:: https://coveralls.io/repos/github/abkfenris/sugarloaf/badge.svg?branch=master
+   :target: https://coveralls.io/github/abkfenris/sugarloaf
+   :alt: Coveralls Code Coverage
 
 .. |quantifiedcode| image:: https://www.quantifiedcode.com/api/v1/project/3bf7775397674b3ea74ba9b45a5c3e1a/badge.svg
    :target: https://www.quantifiedcode.com/app/project/3bf7775397674b3ea74ba9b45a5c3e1a

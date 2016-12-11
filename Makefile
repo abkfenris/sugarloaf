@@ -26,7 +26,7 @@ lint:
 test:
 	docker-compose --project-name testing -f docker-compose.test.yml up -d
 	docker-compose --project-name testing -f docker-compose.test.yml run wait
-	docker-compose --project-name testing -f docker-compose.test.yml run web py.test tests
+	docker-compose --project-name testing -f docker-compose.test.yml run web py.test -v tests
 	docker-compose --project-name testing -f docker-compose.test.yml down
 
 up:
