@@ -1,7 +1,7 @@
 from flask import Blueprint, jsonify
 from sqlalchemy import JSON, func
 
-from sugarloaf.models import db, TrailStatus, Trail, Area
+from sugarloaf.models import db, TrailStatus, Trail, Area, Lift, LiftStatus
 
 api = Blueprint('api', __name__)
 
@@ -20,6 +20,12 @@ def current():
                        .filter(TrailStatus.trail_id == Trail.id,
                                Area.id == Trail.area_id,
                                TrailStatus.dt == latest)
+    lifts = db.session.query(Lift.name,
+                             LiftStatus.running,
+                             LiftStatus.scheduled,
+                             LiftStatus.hold)\
+                      .filter(LiftStatus.lift_id == Lift.id,
+                              LiftStatus.dt == latest)
 
     return jsonify(
         {'trails': [{'name': trail.name,
@@ -27,7 +33,13 @@ def current():
                      'area': trail.area,
                      'groomed': trail.groomed,
                      'snowmaking': trail.snowmaking,
-                     'open': trail.open} for trail in trails]})
+                     'open': trail.open} for trail in trails],
+        'datetime': latest,
+        'lifts': [{'name': lift.name,
+                   'running': lift.running,
+                   'scheduled': lift.scheduled,
+                   'hold': lift.hold} for lift in lifts]
+        })
 
 
 @api.route('/summary')
