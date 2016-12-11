@@ -31,5 +31,6 @@ test:
 
 up:
 	\rm -f celerybeat.pid
+	alias dc=docker-compose
 	docker-compose up -d --build
 	docker-compose logs -f

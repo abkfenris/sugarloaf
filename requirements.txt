@@ -21,7 +21,7 @@ beautifulsoup4==4.5.1
 dateparser==0.5.0
 lxml==3.6.4
 html2text==2016.9.19
-celery==4.0.0
+celery==4.0.1
 redis==2.10.5
 
 # Testing
