@@ -53,3 +53,4 @@ class TestApi:
 
         assert 'datetime' in data['conditions'][0]
         assert 'open' in data['conditions'][0]
+        assert isinstance(data['conditions'][0]['trail_count'], int)

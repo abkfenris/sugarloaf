@@ -66,7 +66,7 @@ def summary():
             'groomed': condition.groomed,
             'snowmaking': condition.snowmaking,
             'difficulty': condition.difficulty,
-            'trail_count': condition[5],
+            'trail_count': condition[6],
             'area': condition.name
         } for condition in conditions]}
 
