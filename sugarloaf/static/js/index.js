@@ -1,4 +1,5 @@
 var filename_status = '/api/current',
+    filename_summary = '/api/summary',
     WIDTH = 300,
     HEIGHT = 200,
     MARGINS = {top: 10, left: 20, right: 20, bottom: 20},
@@ -111,8 +112,84 @@ function buildCharts() {
     dc.renderAll();
 }
 
+function summaryToDates(summary) {
+    var dates = {};
+
+    summary.conditions.forEach(function(c) {
+        // set our initial date if unknown
+        if (undefined === dates[c.datetime]) {
+            dates[c.datetime] = {};
+        }
+
+        // make our difficulties
+        if (c.open && undefined === dates[c.datetime][c.difficulty]) {
+            dates[c.datetime][c.difficulty] = c.trail_count;
+        } else if (c.open) {
+            dates[c.datetime][c.difficulty] += c.trail_count;
+        } else if (undefined === dates[c.datetime]['closed']) {
+            dates[c.datetime]['closed'] = c.trail_count;
+        } else {
+            dates[c.datetime]['closed'] += c.trail_count;
+        };
+    });
+
+    var dates_list = [];
+
+    Object.keys(dates).forEach(function(key) {
+        var date = dates[key];
+        date['datetime'] = key;
+        dates_list.push(date);
+    });
+
+    return dates_list;
+};
+
+
+function buildSummaryChart(summary) {
+    var dates = summaryToDates(summary),
+        width = 800 - MARGINS.left - MARGINS.right,
+        height = 200 - MARGINS.top - MARGINS.bottom;
+    
+    sugarloaf.summary_x = d3.scale.ordinal()
+        .rangeRoundBands([0, width], .1)
+        .domain(dates.map(function(d) {
+            return d.datetime;
+        }))
+    
+    sugarloaf.summary_y = d3.scale.linear()
+        .rangeRound([height, 0]);
+    
+    sugarloaf.summary_stack = d3.layout.stack()
+        .offset('zero')
+        .values(function(d) {return d.values;})
+        .x(function(d) {return x(d.datetime)})
+        .y(function(d) {return d.value});
+    
+    sugarloaf.summary_color = d3.scale.ordinal()
+        //     green,      blue,     black, double-black, terrain-park closed
+        .range(['#05FF00', '#0040FF', '#6D6D6D', '#000', '#F6AE3B', '#FFF'])
+        .domain(['green', 'blue', 'black', 'double-black', 'terrain-park', 'closed']);
+
+    var svg = d3.select('#chart-summary').append('svg')
+        .attr('width', width + MARGINS.left + MARGINS.right)
+        .attr('height', height + MARGINS.top + MARGINS.bottom)
+      .append('g')
+        .attr('transform', 'translate(' + MARGINS.left + ',' + MARGINS.top +')');
+    
+    var selection = svg.selectAll('.series')
+        .data(dates)
+        .enter().append('g')
+          .attr('class', 'series');
+}
+
 d3.json(filename_status, function(data) {
     sugarloaf.data = data;
 
     buildCharts();
+});
+
+d3.json(filename_summary, function(data) {
+    sugarloaf.summary = data;
+
+    buildSummaryChart(sugarloaf.summary);
 });
