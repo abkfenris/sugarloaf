@@ -32,4 +32,4 @@ flake8==3.2.1
 vcrpy==1.10.3
 python-coveralls==2.9.0
 
-ipython
+ipython==5.1.0
