@@ -16,7 +16,7 @@ Tracking trail and lift statuses at Sugarloaf Mountain.
 |               |                   |
 |               | |landscape|       |
 +---------------+-------------------+
-| Requirements  | |requires.io|     |
+| Requirements  | |requirements|    |
 +---------------+-------------------+
 | Issues        | |Issues|          |
 +---------------+-------------------+
@@ -50,9 +50,9 @@ Tracking trail and lift statuses at Sugarloaf Mountain.
    :target: https://landscape.io/github/abkfenris/sugarloaf/master
    :alt: Code Health
 
-.. |requires.io| image:: https://requires.io/github/abkfenris/sugarloaf/requirements.svg?branch=master
-   :target: https://requires.io/github/abkfenris/sugarloaf/requirements/?branch=master
-   :alt: Requirements Status
+.. |requirements| image:: https://pyup.io/repos/github/abkfenris/sugarloaf/shield.svg
+   :target: https://pyup.io/repos/github/abkfenris/sugarloaf/
+   :alt: Updates
 
 .. |issues| image:: https://img.shields.io/github/issues/abkfenris/sugarloaf.svg
    :target: https://github.com/abkfenris/sugarloaf/issues
