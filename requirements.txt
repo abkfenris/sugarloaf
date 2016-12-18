@@ -18,7 +18,7 @@ cssmin==0.2.0
 jsmin==2.2.1
 requests==2.12.4
 beautifulsoup4==4.5.1
-dateparser==0.5.0
+dateparser==0.5.1
 lxml==3.7.0
 html2text==2016.9.19
 celery==4.0.1
