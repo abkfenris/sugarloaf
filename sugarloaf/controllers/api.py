@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify
-from sqlalchemy import JSON, func
+from sqlalchemy import func
 
 from sugarloaf.models import db, TrailStatus, Trail, Area, Lift, LiftStatus
 

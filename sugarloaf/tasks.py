@@ -2,7 +2,6 @@ import html2text
 from celery import Celery
 from flask import current_app
 from celery.task.schedules import crontab
-from celery.decorators import periodic_task
 
 from sugarloaf.settings import Config
 from sugarloaf.models import db, TrailStatus, LiftStatus, Lift, SnowReporter, DailyReport

@@ -1,17 +1,10 @@
-import warnings
-
 import requests
 from bs4 import BeautifulSoup
 import dateparser
 
-URL = 'http://sugarloaf.com/the-mountain/daily-report'
+from .scrape_sugarloaf_lifts_trails import update_time
 
-def update_time(soup):
-    """Returns datetime when the lift and trail report was last updated"""
-    right_content = soup.find('div', {'class': 'content--right'})
-    condition_update_string = right_content.find('small').contents[0]
-    condition_time_string = condition_update_string.strip().split('of')[1]
-    return dateparser.parse(condition_time_string)
+URL = 'http://sugarloaf.com/the-mountain/daily-report'
 
 
 def report_text(soup):

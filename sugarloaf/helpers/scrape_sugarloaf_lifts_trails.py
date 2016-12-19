@@ -1,5 +1,3 @@
-import warnings
-
 import requests
 from bs4 import BeautifulSoup
 import dateparser
@@ -99,7 +97,7 @@ def lift_status(lift):
 
 def update_lifts(soup):
     """Yields dicts with Sugarloaf lift names and statuses"""
-    div_lift_status = div_trail_status = soup.find('div', {'class': 'lift-status'})
+    div_lift_status = soup.find('div', {'class': 'lift-status'})
     lifts_divs = div_lift_status.find_all('div', {'class': 'lift'})
 
     for lift_div in lifts_divs:
