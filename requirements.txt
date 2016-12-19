@@ -10,26 +10,26 @@ geoalchemy2==0.4.0
 psycopg2==2.6.2
 Flask-Script==2.0.5
 Flask-WTF==0.13.1
-Flask-Migrate==2.0.1
+Flask-Migrate==2.0.2
 
 # Other
 itsdangerous==0.24
 cssmin==0.2.0
 jsmin==2.2.1
-requests==2.12.3
+requests==2.12.4
 beautifulsoup4==4.5.1
-dateparser==0.5.0
-lxml==3.6.4
+dateparser==0.5.1
+lxml==3.7.0
 html2text==2016.9.19
-celery==4.0.1
+celery==4.0.2
 redis==2.10.5
 
 # Testing
-pytest==3.0.4
+pytest==3.0.5
 pytest-cov==2.4.0
-mccabe==0.5.2
+mccabe==0.5.3
 flake8==3.2.1
-vcrpy==1.10.3
-python-coveralls
+vcrpy==1.10.4
+python-coveralls==2.9.0
 
-ipython
+ipython==5.1.0
