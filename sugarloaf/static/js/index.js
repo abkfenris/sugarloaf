@@ -214,7 +214,7 @@ function buildSummaryChart(summary) {
     
     sugarloaf.summary_color = d3.scale.ordinal()
         //     green,      blue,     black, double-black, terrain-park closed
-        .range(['#05FF00', '#0040FF', '#6D6D6D', '#000', '#F6AE3B', '#FFF'])
+        .range(['#00A64B', '#2D2D94', '#6D6D6D', '#000', '#F6AE3B', '#FFF'])
         .domain(['green', 'blue', 'black', 'double-black', 'terrain-park', 'closed']);
 
     var svg = d3.select('#chart-summary').append('svg')
@@ -227,7 +227,8 @@ function buildSummaryChart(summary) {
         .data(sugarloaf.summary_stack_layers)
       .enter().append('path')
           .attr('class', 'layer')
-          .attr('d', function(d) { return sugarloaf.summary_area(d);});
+          .attr('d', function(d) { return sugarloaf.summary_area(d);})
+          .style('fill', function(d, i) { return sugarloaf.summary_color(Object.keys(sugarloaf.difficulty_order)[i]) });
 }
 
 d3.json(filename_status, function(data) {
