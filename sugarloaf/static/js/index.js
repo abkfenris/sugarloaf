@@ -12,6 +12,7 @@ sugarloaf.difficulty_order = {
     'double-black': 4,
     'terrain-park': 5
 }
+sugarloaf.parseDate = d3.time.format('%Y-%m-%dT%H:%M:%S');
 
 function buildCharts() {
     sugarloaf.ndx = crossfilter(sugarloaf.data.trails);
@@ -137,33 +138,79 @@ function summaryToDates(summary) {
 
     Object.keys(dates).forEach(function(key) {
         var date = dates[key];
-        date['datetime'] = key;
+        date['datetime'] = sugarloaf.parseDate.parse(key);
         dates_list.push(date);
+    });
+
+    dates_list.sort(function(a, b) {
+        if (a.datetime < b.datetime) {
+            return -1;
+        } else {
+            return 1;
+        }
     });
 
     return dates_list;
 };
 
+// takes the output of summaryToDates and returns a list of lists ordered by
+// Object.keys(sugarloaf.difficulty_order)
+function datesToDataset(dates) {
+    var output = [];
+
+    Object.keys(sugarloaf.difficulty_order).forEach(function(difficulty) {
+        var diff_array = [];
+
+        dates.forEach(function(date) {
+            var date_diff_obj = {'x': date.datetime}
+            if (undefined === date[difficulty]) {
+                date_diff_obj['y'] = 0;
+            } else {
+                date_diff_obj['y'] = date[difficulty];
+            }
+            diff_array.push(date_diff_obj)
+        })
+
+        output.push(diff_array);
+    })
+    return output;
+}
+
+function countDate(date) {
+    var count = 0;
+    for (var key in date) {
+        if (date.hasOwnProperty(key) && key !== 'datetime') {
+            count += date[key];
+        }
+    }
+    return count;
+}
 
 function buildSummaryChart(summary) {
-    var dates = summaryToDates(summary),
+    sugarloaf.dates = summaryToDates(summary),
         width = 800 - MARGINS.left - MARGINS.right,
         height = 200 - MARGINS.top - MARGINS.bottom;
+    sugarloaf.dataset = datesToDataset(sugarloaf.dates);
     
     sugarloaf.summary_x = d3.scale.ordinal()
         .rangeRoundBands([0, width], .1)
-        .domain(dates.map(function(d) {
+        .domain(sugarloaf.dates.map(function(d) {
             return d.datetime;
         }))
     
     sugarloaf.summary_y = d3.scale.linear()
-        .rangeRound([height, 0]);
+        .rangeRound([height, 0])
+        .domain([0, d3.max(sugarloaf.dates, function(d) { return countDate(d)})]);
     
-    sugarloaf.summary_stack = d3.layout.stack()
-        .offset('zero')
-        .values(function(d) {return d.values;})
-        .x(function(d) {return x(d.datetime)})
-        .y(function(d) {return d.value});
+    sugarloaf.summary_stack = d3.layout.stack();
+    
+    sugarloaf.summary_stack_layers = sugarloaf.summary_stack(sugarloaf.dataset);
+    
+    sugarloaf.summary_area = d3.svg.area()
+        .interpolate('cardinal')
+        .x(function(d) { return sugarloaf.summary_x(d.x)})
+        .y0(function(d) { return sugarloaf.summary_y(d.y0)})
+        .y1(function(d) { return sugarloaf.summary_y(d.y0 + d.y)});
     
     sugarloaf.summary_color = d3.scale.ordinal()
         //     green,      blue,     black, double-black, terrain-park closed
@@ -177,9 +224,10 @@ function buildSummaryChart(summary) {
         .attr('transform', 'translate(' + MARGINS.left + ',' + MARGINS.top +')');
     
     var selection = svg.selectAll('.series')
-        .data(dates)
-        .enter().append('g')
-          .attr('class', 'series');
+        .data(sugarloaf.summary_stack_layers)
+      .enter().append('path')
+          .attr('class', 'layer')
+          .attr('d', function(d) { return sugarloaf.summary_area(d);});
 }
 
 d3.json(filename_status, function(data) {
