@@ -13,6 +13,10 @@ sugarloaf.difficulty_order = {
     'terrain-park': 5
 }
 sugarloaf.parseDate = d3.time.format('%Y-%m-%dT%H:%M:%S');
+sugarloaf.summary_color = d3.scale.ordinal()
+    //     green,      blue,     black, double-black, terrain-park closed
+    .range(['#00A64B', '#2D2D94', '#6D6D6D', '#000', '#F6AE3B', '#FFF'])
+    .domain(['green', 'blue', 'black', 'double-black', 'terrain-park', 'closed']);
 
 function buildCharts() {
     sugarloaf.ndx = crossfilter(sugarloaf.data.trails);
@@ -89,6 +93,10 @@ function buildCharts() {
         .margins(MARGINS)
         .dimension(sugarloaf.difficultyDim)
         .group(sugarloaf.difficultyGroup)
+        .colors(sugarloaf.summary_color)
+        .colorAccessor(function(d) {
+            return d.key;
+        })
         .ordering(function(d) {
             return sugarloaf.difficulty_order[d.key];
         })
@@ -187,8 +195,9 @@ function countDate(date) {
 }
 
 function buildSummaryChart(summary) {
-    sugarloaf.dates = summaryToDates(summary),
-        width = 800 - MARGINS.left - MARGINS.right,
+    sugarloaf.dates = summaryToDates(summary);
+    var maxWidth = d3.select('#chart-summary')[0][0].clientWidth;
+    var width = maxWidth - MARGINS.left - MARGINS.right,
         height = 200 - MARGINS.top - MARGINS.bottom;
     sugarloaf.dataset = datesToDataset(sugarloaf.dates);
     
@@ -211,11 +220,6 @@ function buildSummaryChart(summary) {
         .x(function(d) { return sugarloaf.summary_x(d.x)})
         .y0(function(d) { return sugarloaf.summary_y(d.y0)})
         .y1(function(d) { return sugarloaf.summary_y(d.y0 + d.y)});
-    
-    sugarloaf.summary_color = d3.scale.ordinal()
-        //     green,      blue,     black, double-black, terrain-park closed
-        .range(['#00A64B', '#2D2D94', '#6D6D6D', '#000', '#F6AE3B', '#FFF'])
-        .domain(['green', 'blue', 'black', 'double-black', 'terrain-park', 'closed']);
 
     sugarloaf.summary_xAxis = d3.svg.axis()
         .scale(sugarloaf.summary_x)
