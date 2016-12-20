@@ -61,7 +61,7 @@ def summary():
                                       Area.name)
 
     output = {'conditions': [{
-            'datetime': condition.dt,
+            'datetime': condition.dt.isoformat(),
             'open': condition.open,
             'groomed': condition.groomed,
             'snowmaking': condition.snowmaking,
