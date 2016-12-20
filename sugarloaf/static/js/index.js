@@ -2,7 +2,7 @@ var filename_status = '/api/current',
     filename_summary = '/api/summary',
     WIDTH = 300,
     HEIGHT = 200,
-    MARGINS = {top: 10, left: 20, right: 20, bottom: 20},
+    MARGINS = {top: 10, left: 30, right: 20, bottom: 20},
     sugarloaf = {};
 
 sugarloaf.difficulty_order = {
@@ -192,11 +192,11 @@ function buildSummaryChart(summary) {
         height = 200 - MARGINS.top - MARGINS.bottom;
     sugarloaf.dataset = datesToDataset(sugarloaf.dates);
     
-    sugarloaf.summary_x = d3.scale.ordinal()
-        .rangeRoundBands([0, width], .1)
-        .domain(sugarloaf.dates.map(function(d) {
+    sugarloaf.summary_x = d3.time.scale()
+        .range([0, width])
+        .domain(d3.extent(sugarloaf.dates.map(function(d) {
             return d.datetime;
-        }))
+        })));
     
     sugarloaf.summary_y = d3.scale.linear()
         .rangeRound([height, 0])
@@ -217,6 +217,18 @@ function buildSummaryChart(summary) {
         .range(['#00A64B', '#2D2D94', '#6D6D6D', '#000', '#F6AE3B', '#FFF'])
         .domain(['green', 'blue', 'black', 'double-black', 'terrain-park', 'closed']);
 
+    sugarloaf.summary_xAxis = d3.svg.axis()
+        .scale(sugarloaf.summary_x)
+        .orient('bottom')
+        .ticks(d3.time.sundays, 1)
+        //.ticks(10)
+        //.tickSubdivide(true)
+        .tickFormat(d3.time.format("%b %e"));
+    
+    sugarloaf.summary_yAxis = d3.svg.axis()
+        .scale(sugarloaf.summary_y)
+        .orient('left');
+
     var svg = d3.select('#chart-summary').append('svg')
         .attr('width', width + MARGINS.left + MARGINS.right)
         .attr('height', height + MARGINS.top + MARGINS.bottom)
@@ -229,6 +241,15 @@ function buildSummaryChart(summary) {
           .attr('class', 'layer')
           .attr('d', function(d) { return sugarloaf.summary_area(d);})
           .style('fill', function(d, i) { return sugarloaf.summary_color(Object.keys(sugarloaf.difficulty_order)[i]) });
+    
+    svg.append('g')
+        .attr('class', 'x axis')
+        .attr('transform', 'translate(0,' + height + ')')
+        .call(sugarloaf.summary_xAxis);
+    
+    svg.append('g')
+        .attr('class', 'y axis')
+        .call(sugarloaf.summary_yAxis);
 }
 
 d3.json(filename_status, function(data) {
