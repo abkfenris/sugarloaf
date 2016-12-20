@@ -220,8 +220,8 @@ function buildSummaryChart(summary) {
     sugarloaf.summary_xAxis = d3.svg.axis()
         .scale(sugarloaf.summary_x)
         .orient('bottom')
-        .ticks(d3.time.sundays, 1)
-        //.ticks(10)
+        //.ticks(d3.time.sundays, 1)
+        .ticks(10)
         //.tickSubdivide(true)
         .tickFormat(d3.time.format("%b %e"));
     
