@@ -1,10 +1,6 @@
 Sugarloaf
 =========
 
-.. image:: https://api.codacy.com/project/badge/Grade/ab9f70265db5452d959ed3da39b7fa4b
-   :alt: Codacy Badge
-   :target: https://www.codacy.com/app/abk/sugarloaf?utm_source=github.com&utm_medium=referral&utm_content=abkfenris/sugarloaf&utm_campaign=badger
-
 Tracking trail and lift statuses at Sugarloaf Mountain.
 
 +---------------+-------------------+
@@ -19,6 +15,7 @@ Tracking trail and lift statuses at Sugarloaf Mountain.
 |               | |codebeat|        |
 |               |                   |
 |               | |landscape|       |
+|               | |codacy|          |
 +---------------+-------------------+
 | Requirements  | |requirements|    |
 +---------------+-------------------+
@@ -53,6 +50,10 @@ Tracking trail and lift statuses at Sugarloaf Mountain.
 .. |landscape| image:: https://landscape.io/github/abkfenris/sugarloaf/master/landscape.svg?style=flat
    :target: https://landscape.io/github/abkfenris/sugarloaf/master
    :alt: Code Health
+
+.. |codacy| image:: https://api.codacy.com/project/badge/Grade/ab9f70265db5452d959ed3da39b7fa4b
+   :alt: Codacy Badge
+   :target: https://www.codacy.com/app/abk/sugarloaf?utm_source=github.com&utm_medium=referral&utm_content=abkfenris/sugarloaf&utm_campaign=badger
 
 .. |requirements| image:: https://pyup.io/repos/github/abkfenris/sugarloaf/shield.svg
    :target: https://pyup.io/repos/github/abkfenris/sugarloaf/
