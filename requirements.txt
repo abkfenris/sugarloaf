@@ -27,7 +27,7 @@ redis==2.10.5
 # Testing
 pytest==3.0.5
 pytest-cov==2.4.0
-mccabe==0.5.3
+mccabe==0.6.1
 flake8==3.2.1
 vcrpy==1.10.5
 python-coveralls==2.9.0
