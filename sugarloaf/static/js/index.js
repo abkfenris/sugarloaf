@@ -262,7 +262,7 @@ d3.json(filename_status, function(data) {
     sugarloaf.data = data;
 
     d3.select('#report')
-        .html('<br />' + data.report);
+        .html(data.report);
 
     buildCharts();
 });
