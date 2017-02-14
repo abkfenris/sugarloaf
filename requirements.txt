@@ -1,4 +1,4 @@
-Flask==0.11.1
+Flask==0.12
 
 # Flask Extensions
 Flask-Assets==0.12
@@ -9,7 +9,7 @@ Flask-SQLAlchemy==2.1
 geoalchemy2==0.4.0
 psycopg2==2.6.2
 Flask-Script==2.0.5
-Flask-WTF==0.13.1
+Flask-WTF==0.14.2
 Flask-Migrate==2.0.2
 
 # Other
@@ -17,9 +17,9 @@ itsdangerous==0.24
 cssmin==0.2.0
 jsmin==2.2.1
 requests==2.12.4
-beautifulsoup4==4.5.1
+beautifulsoup4==4.5.3
 dateparser==0.5.1
-lxml==3.7.0
+lxml==3.7.2
 html2text==2016.9.19
 celery==4.0.2
 redis==2.10.5
@@ -30,7 +30,7 @@ pytest==3.0.5
 pytest-cov==2.4.0
 mccabe==0.5.3
 flake8==3.2.1
-vcrpy==1.10.4
+vcrpy==1.10.5
 python-coveralls==2.9.0
 
 ipython==5.1.0
