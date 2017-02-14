@@ -196,6 +196,8 @@ function countDate(date) {
 
 function buildSummaryChart(summary) {
     sugarloaf.dates = summaryToDates(summary);
+
+    // get the width of the parent container
     var maxWidth = d3.select('#chart-summary')[0][0].clientWidth;
     var width = maxWidth - MARGINS.left - MARGINS.right,
         height = 200 - MARGINS.top - MARGINS.bottom;
@@ -258,6 +260,9 @@ function buildSummaryChart(summary) {
 
 d3.json(filename_status, function(data) {
     sugarloaf.data = data;
+
+    d3.select('#report')
+        .html('<br />' + data.report);
 
     buildCharts();
 });

@@ -1,7 +1,8 @@
 from flask import Blueprint, jsonify
+import markdown
 from sqlalchemy import func
 
-from sugarloaf.models import db, TrailStatus, Trail, Area, Lift, LiftStatus
+from sugarloaf.models import db, TrailStatus, Trail, Area, Lift, LiftStatus, DailyReport
 
 api = Blueprint('api', __name__)
 
@@ -26,6 +27,7 @@ def current():
                              LiftStatus.hold)\
                       .filter(LiftStatus.lift_id == Lift.id,
                               LiftStatus.dt == latest)
+    latest_report = DailyReport.query.order_by(DailyReport.dt.desc()).first()
 
     return jsonify(
         {'trails': [{'name': trail.name,
@@ -35,6 +37,7 @@ def current():
                      'snowmaking': trail.snowmaking,
                      'open': trail.open} for trail in trails],
         'datetime': latest,
+        'report': markdown.markdown(latest_report.report),
         'lifts': [{'name': lift.name,
                    'running': lift.running,
                    'scheduled': lift.scheduled,
