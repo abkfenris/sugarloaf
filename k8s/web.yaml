@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: gcr.io/alex-kerney/sugarloaf:0.1.4
+        image: gcr.io/alex-kerney/sugarloaf:0.1.5
         command:
         - gunicorn
         - --log-level
