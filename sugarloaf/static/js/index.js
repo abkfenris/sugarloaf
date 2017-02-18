@@ -136,8 +136,31 @@ function buildCharts() {
             // each time the table is rendered remove the extra thing
             table.select('tr.dc-table-group').remove();
         });
+    
+    d3.selectAll('a#open').on('click', function() {
+        sugarloaf.openChart.filterAll();
+        dc.renderAll();
+    });
+    d3.selectAll('a#groomed').on('click', function() {
+        sugarloaf.groomedChart.filterAll();
+        dc.renderAll();
+    });
+    d3.selectAll('a#snowmaking').on('click', function() {
+        sugarloaf.snowmakingChart.filterAll();
+        dc.renderAll();
+    });
+    d3.selectAll('a#difficulty').on('click', function() {
+        sugarloaf.difficultyChart.filterAll();
+        dc.renderAll();
+    });
+    d3.selectAll('a#area').on('click', function() {
+        sugarloaf.areaChart.filterAll();
+        dc.renderAll();
+    });
 
     dc.renderAll();
+
+
 }
 
 function summaryToDates(summary) {
@@ -216,6 +239,8 @@ function countDate(date) {
 function buildSummaryChart(summary) {
     sugarloaf.dates = summaryToDates(summary);
 
+
+    MARGINS.left = 35;
     // get the width of the parent container
     var maxWidth = d3.select('#chart-summary')[0][0].clientWidth;
     var width = maxWidth - MARGINS.left - MARGINS.right,
