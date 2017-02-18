@@ -1,0 +1,41 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: sugarloaf-nginx
+  labels:
+    app: sugarloaf
+    service: nginx
+    tier: frontend
+    name: sugarloaf-nginx
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: sugarloaf
+        service: nginx
+        tier: frontend
+        name: sugarloaf-nginx
+    spec:
+      volumes:
+      - name: nginx-config
+        configMap:
+          name: sugarloaf-nginx
+      containers:
+        - image:  nginx:1.10.1-alpine
+          name:  sugarloaf-nginx
+          resources:
+            requests:
+              cpu: "10m"
+              memory: "10M"
+            limits:
+              cpu: "400m"
+              memory: "400M"
+          ports:
+          - containerPort: 80
+            name: http
+          volumeMounts:
+            - name: nginx-config
+              mountPath:  /etc/nginx/conf.d/
+       
+        

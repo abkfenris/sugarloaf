@@ -1,0 +1,84 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sugarloaf-postgres
+  labels:
+    app: sugarloaf
+    name: sugarloaf-postgres
+    service: postgres
+    tier: backend
+spec:
+  ports:
+  - name:  postgres
+    port:  5432
+    protocol: TCP
+  clusterIP: None
+  selector:
+    app: sugarloaf
+    name: sugarloaf-postgres
+    service: postgres
+    tier: backend
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sugarloaf-redis
+  labels:
+    app: sugarloaf
+    name: sugarloaf-redis
+    service: redis
+    tier: backend
+spec:
+  ports:
+  - name: redis
+    port:  6379
+    protocol: TCP
+  selector:
+    app: sugarloaf
+    name: sugarloaf-redis
+    service: redis
+    tier: backend
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sugarloaf-web
+  labels:
+    app: sugarloaf
+    name: sugarloaf-web
+    service: web
+    tier: frontend
+spec:
+  ports:
+  - name: web
+    port:  8000
+    protocol: TCP
+  selector:
+    app: sugarloaf
+    name: sugarloaf-web
+    service: web
+    tier: frontend
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sugarloaf-nginx
+  labels:
+    app: sugarloaf
+    name: sugarloaf-nginx
+    service: nginx
+    tier: frontend
+spec:
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+  - name:  https
+    port:  443
+    protocol: TCP
+  selector:
+    app: sugarloaf
+    name: sugarloaf-nginx
+    service: nginx
+    tier: frontend
+  type: LoadBalancer

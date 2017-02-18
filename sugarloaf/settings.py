@@ -16,6 +16,8 @@ class ProdConfig(Config):
 
     CACHE_TYPE = 'simple'
 
+class ProductionConfig(ProdConfig):
+    ENV = 'production'
 
 class DevConfig(Config):
     ENV = 'dev'

@@ -1,0 +1,49 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: sugarloaf-celery-beat
+  labels:
+    app: sugarloaf
+    name: sugarloaf-celery-beat
+    service: celery-beat
+    tier: backend
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: sugarloaf
+        name: sugarloaf-celery-beat
+        service: celery-beat
+        tier: backend
+    spec:
+      containers:
+      - name: sugarloaf-celery-beat
+        image: gcr.io/alex-kerney/sugarloaf:0.1
+        command:
+        - celery
+        - beat
+        - -A
+        - celery_worker.celery
+        - -l
+        - info
+        env:
+        - name: C_FORCE_ROOT
+          value: "True"
+        - name: SUGARLOAF_ENV
+          value: production
+        - name: SECRET_KEY
+          valueFrom:
+            secretKeyRef:
+              key: secret-key
+              name: sugarloaf-secrets
+        - name: SQLALCHEMY_DATABASE_URI
+          valueFrom:
+            secretKeyRef:
+              key: sugarloaf-db
+              name: sugarloaf-secrets
+        - name: CELERY_BROKER_URL
+          valueFrom:
+            secretKeyRef:
+              key: celery-broker-url
+              name: sugarloaf-secrets

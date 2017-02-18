@@ -1,0 +1,60 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+    labels:
+        app: sugarloaf
+        name: sugarloaf-web
+        service: web
+        tier: frontend
+    name: sugarloaf-web
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: sugarloaf
+        name: sugarloaf-web
+        service: web
+        tier: frontend
+    spec:
+      containers:
+      - name: web
+        image: gcr.io/alex-kerney/sugarloaf:0.1.4
+        command:
+        - gunicorn
+        - --log-level
+        - debug
+        - -w
+        - "2"
+        - -b
+        - :8000
+        - wsgi:app
+        ports:
+        - containerPort: 8000
+          name: gunicorn
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 400m
+          requests:
+            cpu: 10m
+            memory: 110M
+        env:
+        - name: SUGARLOAF_ENV
+          value: prod
+        - name: SECRET_KEY
+          valueFrom:
+            secretKeyRef:
+              key: secret-key
+              name: sugarloaf-secrets
+        - name: SQLALCHEMY_DATABASE_URI
+          valueFrom:
+            secretKeyRef:
+              key: sugarloaf-db
+              name: sugarloaf-secrets
+        - name: CELERY_BROKER_URL
+          valueFrom:
+            secretKeyRef:
+              key: sugarloaf-db
+              name: sugarloaf-secrets
+
