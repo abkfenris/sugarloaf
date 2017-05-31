@@ -10,7 +10,7 @@ geoalchemy2==0.4.0
 psycopg2==2.6.2
 Flask-Script==2.0.5
 Flask-WTF==0.14.2
-Flask-Migrate==2.0.3
+Flask-Migrate==2.0.4
 
 # Other
 itsdangerous==0.24
