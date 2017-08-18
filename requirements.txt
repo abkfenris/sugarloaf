@@ -23,7 +23,7 @@ lxml==3.7.2
 html2text==2016.9.19
 celery==4.0.2
 redis==2.10.5
-markdown==2.6.8
+markdown==2.6.9
 
 # Testing
 pytest==3.0.6
