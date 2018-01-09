@@ -20,7 +20,7 @@ requests==2.13.0
 beautifulsoup4==4.5.3
 dateparser==0.5.1
 lxml==3.7.2
-html2text==2016.9.19
+html2text==2018.9.1
 celery==4.0.2
 redis==2.10.5
 markdown==2.6.8
