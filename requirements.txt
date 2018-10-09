@@ -36,4 +36,4 @@ python-coveralls==2.9.0
 ipython==5.2.2
 
 # Deployment
-gunicorn==19.6.0
+gunicorn==19.9.0
