@@ -13,7 +13,7 @@ Flask-WTF==0.14.2
 Flask-Migrate==2.0.3
 
 # Other
-itsdangerous==0.24
+itsdangerous==1.1.0
 cssmin==0.2.0
 jsmin==2.2.1
 requests==2.13.0
