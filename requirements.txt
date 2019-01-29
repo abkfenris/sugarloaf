@@ -22,7 +22,7 @@ dateparser==0.5.1
 lxml==3.7.2
 html2text==2016.9.19
 celery==4.0.2
-redis==2.10.5
+redis==3.1.0
 markdown==2.6.8
 
 # Testing
