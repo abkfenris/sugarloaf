@@ -31,7 +31,7 @@ pytest-cov==2.4.0
 mccabe==0.6.1
 flake8==3.3.0
 vcrpy==1.10.5
-python-coveralls==2.9.0
+python-coveralls==2.9.2
 
 ipython==5.2.2
 
