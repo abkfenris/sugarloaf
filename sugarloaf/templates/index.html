@@ -1,6 +1,6 @@
 {%extends "base.html"%}
 
-{%block title%}Home{% endblock %}
+{%block title%}Sugarloaf Snow Condtions{% endblock %}
 
 {% assets "dc_css" %}
             <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}" />
@@ -19,36 +19,62 @@
 
     <div class="row">
         <div class="col-md-4">
-            <h3>Open <small><a id="open">reset</a></small></h3>
+            <h3>Open trails <small><a id="open">reset</a></small></h3>
             <div id="chart-row-open"></div>
         </div>
         <div class="col-md-4">
-            <h3>Groomed <small><a id="groomed">reset</a></small></h3>
+            <h3>Groomed trails <small><a id="groomed">reset</a></small></h3>
             <div id="chart-row-groomed"></div>
         </div>
         <div class="col-md-4">
-            <h3>Snowmaking <small><a id="snowmaking">reset</a></small></h3>
+            <h3>Snowmaking trails <small><a id="snowmaking">reset</a></small></h3>
             <div id="chart-row-snowmaking"></div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-8">
-            <br />
-            <div id="links">
-                Straight from <a href="http://sugarloaf.com/the-mountain/daily-report">the horse's mouth</a> or some variant below.
-            </div>
-            <br />
-            <div id="report">
-               Snow report goes here.
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#report-tab" aria-controls="report-tab" role="tab" data-toggle="tab">Daily Report</a></li>
+                <li role="presentation"><a href="#trail-list-tab" aria-controls="trail-tab" role="tab" data-toggle="tab">Trail List</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="report-tab">
+                    <br />
+                    <div id="links">
+                        If something looks weird in the daily report below, you might as well check out <a href="http://sugarloaf.com/the-mountain/daily-report">the real thing</a>.
+                    </div>
+                    <hr />
+                    <div id="report">
+                    Snow report goes here.
+                    </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="trail-list-tab">
+                    <br />
+                    <div id="links">
+                        There are no guarentees about this info.
+                        <a href="http://sugarloaf.com/the-mountain/trails-and-lifts">Sugarloaf's Trails and Lifts</a> is the source of truth in this world.
+                        <hr />
+                    </div>
+                    <table id="trail-list" class="table table-hover">
+                        <thead>
+                            <tr class="header">
+                                <th>Name</th>
+                                <th>Difficulty</th>
+                    </table>
+                </div>
             </div>
         </div>
         <div class="col-md-4">
             <div>
-                <h3>Difficulty <small><a id="difficulty">reset</a></small></h3>
+                <h3>Trail Difficulty <small><a id="difficulty">reset</a></small></h3>
                 <div id="chart-row-difficulty"></div>
             </div>
             <div>
-                <h3>Area <small><a id="area">reset</a></small></h3>
+                <h3>Trail Area <small><a id="area">reset</a></small></h3>
                 <div id="chart-row-area"></div>
             </div>
         </div>

@@ -117,8 +117,50 @@ function buildCharts() {
         .dimension(sugarloaf.areaDim)
         .group(sugarloaf.areaGroup)
         .elasticX(true);
+    
+
+    sugarloaf.allDim = sugarloaf.ndx.dimension(function(d) {return d;});
+
+    sugarloaf.table = dc.dataTable('#trail-list');
+    sugarloaf.table
+        .dimension(sugarloaf.allDim)
+        .group(function(d) { return "Trail table"; })
+        .columns([
+            'name',
+            'difficulty'
+        ])
+        .size(250)
+        .sortBy(function(d) { return d.name })
+        .order(d3.ascending)
+        .on('renderlet', function(table) {
+            // each time the table is rendered remove the extra thing
+            table.select('tr.dc-table-group').remove();
+        });
+    
+    d3.selectAll('a#open').on('click', function() {
+        sugarloaf.openChart.filterAll();
+        dc.renderAll();
+    });
+    d3.selectAll('a#groomed').on('click', function() {
+        sugarloaf.groomedChart.filterAll();
+        dc.renderAll();
+    });
+    d3.selectAll('a#snowmaking').on('click', function() {
+        sugarloaf.snowmakingChart.filterAll();
+        dc.renderAll();
+    });
+    d3.selectAll('a#difficulty').on('click', function() {
+        sugarloaf.difficultyChart.filterAll();
+        dc.renderAll();
+    });
+    d3.selectAll('a#area').on('click', function() {
+        sugarloaf.areaChart.filterAll();
+        dc.renderAll();
+    });
 
     dc.renderAll();
+
+
 }
 
 function summaryToDates(summary) {
@@ -197,6 +239,8 @@ function countDate(date) {
 function buildSummaryChart(summary) {
     sugarloaf.dates = summaryToDates(summary);
 
+
+    MARGINS.left = 35;
     // get the width of the parent container
     var maxWidth = d3.select('#chart-summary')[0][0].clientWidth;
     var width = maxWidth - MARGINS.left - MARGINS.right,
@@ -256,6 +300,14 @@ function buildSummaryChart(summary) {
     svg.append('g')
         .attr('class', 'y axis')
         .call(sugarloaf.summary_yAxis);
+    
+    svg.append('text')
+       .attr('class', 'y label')
+       .attr('text-anchor', 'end')
+       .attr('y', 6)
+       .attr('dy', '.75em')
+       .attr('transform', 'rotate(-90)')
+       .text('Trail count');
 }
 
 d3.json(filename_status, function(data) {
