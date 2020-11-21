@@ -1,2 +1,2 @@
-# SundayRiverConditions
-Automated scraping of Sunday River ski area conditions
+# Sugarloaf
+Automated scraping of Sugarloaf ski area conditions
