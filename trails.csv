@@ -113,7 +113,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Brackett Basin,trail,closed,,,,Slashfire,extremely_difficult,false,false,closed
 ,Skyline,trail,closed,false,false,,Sluice,more_difficult,false,false,closed
 ,Skyline,trail,closed,false,false,,Sluice Chute,most_difficult,false,false,closed
-,Skyline,trail,closed,false,false,,Sluice Headwall,most_difficult,false,false,closed
+,Skyline,trail,closed,true,false,,Sluice Headwall,most_difficult,false,false,closed
 ,Base Area,trail,closed,false,false,,Snowbrook,easier,false,false,closed
 ,Skyline,trail,closed,false,false,,Spillway X-Cut,most_difficult,false,false,closed
 ,SuperQuad,trail,closed,,false,,Spurline,more_difficult,false,false,closed
