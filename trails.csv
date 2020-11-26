@@ -16,7 +16,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,West Mountain,trail,closed,false,false,,Boom Scooter,more_difficult,false,false,closed
 ,King Pine,trail,closed,false,false,,Boomers Glade,most_difficult,false,false,closed
 ,SuperQuad,trail,closed,false,false,,Branding Ax Glade,extremely_difficult,false,false,closed
-,SuperQuad,trail,open,false,true,,Bridle Chain,more_difficult,false,false,grooming
+,SuperQuad,trail,open,true,true,,Bridle Chain,more_difficult,false,false,grooming
 ,Whiffletree,trail,closed,false,false,,Broccoli Garden Glade,most_difficult,false,false,closed
 ,Snowfields™ Summit,trail,closed,false,false,,Bubblecuffer Ext,extremely_difficult,false,false,closed
 ,West Mountain,trail,closed,false,false,,Bucksaw X-Cut,easier,false,false,closed
