@@ -47,7 +47,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,West Mountain,trail,closed,false,false,,Greenhorn Glade,more_difficult,false,false,closed
 ,Snowfields™ Summit,trail,closed,false,false,,Hard Tack,most_difficult,false,false,closed
 ,King Pine,trail,closed,false,false,,Haulback,most_difficult,false,false,closed
-,SuperQuad,trail,closed,false,false,,Hayburner,most_difficult,false,false,closed
+,SuperQuad,trail,open,false,false,,Hayburner,most_difficult,false,false,open
 ,SuperQuad,trail,closed,false,false,,Haywire,more_difficult,false,false,closed
 ,Snowfields™ Summit,trail,closed,false,false,,Hell's Gate,extremely_difficult,false,false,closed
 ,Brackett Basin,trail,closed,,,,High Ball Glade,more_difficult,false,false,closed
