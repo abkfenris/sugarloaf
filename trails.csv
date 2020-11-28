@@ -91,7 +91,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Skyline,trail,closed,false,false,,Midstation X-Cut,more_difficult,false,false,closed
 ,King Pine,trail,closed,false,false,,Misery Whip,extremely_difficult,false,false,closed
 ,Whiffletree,trail,closed,false,false,,Moose Alley,more_difficult,false,false,closed
-,Timberline,trail,closed,false,false,,Narrow Gauge Ext,most_difficult,false,false,closed
+,Timberline,trail,closed,true,false,,Narrow Gauge Ext,most_difficult,false,false,closed
 ,King Pine,trail,closed,false,false,,Old Winter's Way,more_difficult,false,false,closed
 ,SuperQuad,trail,closed,false,false,,Peavy X-Cut,easier,false,false,closed
 ,Double Runner,trail,closed,,false,,Picaroon,easier,false,false,closed
