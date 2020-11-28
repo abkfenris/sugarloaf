@@ -58,7 +58,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Snowfields™ Summit,trail,closed,false,false,,Jagger,extremely_difficult,false,false,closed
 ,Whiffletree,trail,closed,false,false,,Jill Poke,more_difficult,false,false,closed
 ,SuperQuad,trail,closed,false,false,,Kickback,most_difficult,false,false,closed
-,SuperQuad,trail,open,false,false,,Kings Landing,more_difficult,false,false,open
+,SuperQuad,trail,open,false,true,,Kings Landing,more_difficult,false,false,grooming
 ,Skyline,trail,closed,false,false,,Kurf Glade,most_difficult,false,false,closed
 ,Brackett Basin,trail,closed,,,,Little Androscoggin Glade,most_difficult,false,false,closed
 ,Brackett Basin,trail,closed,,,,Logging Road,more_difficult,false,false,closed
