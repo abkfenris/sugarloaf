@@ -16,7 +16,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,West Mountain,trail,closed,false,false,,Boom Scooter,more_difficult,false,false,closed
 ,King Pine,trail,closed,false,false,,Boomers Glade,most_difficult,false,false,closed
 ,SuperQuad,trail,closed,false,false,,Branding Ax Glade,extremely_difficult,false,false,closed
-,SuperQuad,trail,closed,false,false,,Bridle Chain,more_difficult,false,false,closed
+,SuperQuad,trail,closed,true,false,,Bridle Chain,more_difficult,false,false,closed
 ,Whiffletree,trail,closed,false,false,,Broccoli Garden Glade,most_difficult,false,false,closed
 ,Snowfields™ Summit,trail,closed,false,false,,Bubblecuffer Ext,extremely_difficult,false,false,closed
 ,West Mountain,trail,closed,false,false,,Bucksaw X-Cut,easier,false,false,closed
@@ -47,7 +47,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,West Mountain,trail,closed,false,false,,Greenhorn Glade,more_difficult,false,false,closed
 ,Snowfields™ Summit,trail,closed,false,false,,Hard Tack,most_difficult,false,false,closed
 ,King Pine,trail,closed,false,false,,Haulback,most_difficult,false,false,closed
-,SuperQuad,trail,closed,false,false,,Hayburner,most_difficult,false,false,closed
+,SuperQuad,trail,open,false,true,,Hayburner,most_difficult,false,false,grooming
 ,SuperQuad,trail,closed,false,false,,Haywire,more_difficult,false,false,closed
 ,Snowfields™ Summit,trail,closed,false,false,,Hell's Gate,extremely_difficult,false,false,closed
 ,Brackett Basin,trail,closed,,,,High Ball Glade,more_difficult,false,false,closed
@@ -58,7 +58,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Snowfields™ Summit,trail,closed,false,false,,Jagger,extremely_difficult,false,false,closed
 ,Whiffletree,trail,closed,false,false,,Jill Poke,more_difficult,false,false,closed
 ,SuperQuad,trail,closed,false,false,,Kickback,most_difficult,false,false,closed
-,SuperQuad,trail,open,false,true,,Kings Landing,more_difficult,false,false,grooming
+,SuperQuad,trail,open,true,true,,Kings Landing,more_difficult,false,false,grooming
 ,Skyline,trail,closed,false,false,,Kurf Glade,most_difficult,false,false,closed
 ,Brackett Basin,trail,closed,,,,Little Androscoggin Glade,most_difficult,false,false,closed
 ,Brackett Basin,trail,closed,,,,Logging Road,more_difficult,false,false,closed
@@ -91,7 +91,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Skyline,trail,closed,false,false,,Midstation X-Cut,more_difficult,false,false,closed
 ,King Pine,trail,closed,false,false,,Misery Whip,extremely_difficult,false,false,closed
 ,Whiffletree,trail,closed,false,false,,Moose Alley,more_difficult,false,false,closed
-,Timberline,trail,closed,false,false,,Narrow Gauge Ext,most_difficult,false,false,closed
+,Timberline,trail,closed,true,false,,Narrow Gauge Ext,most_difficult,false,false,closed
 ,King Pine,trail,closed,false,false,,Old Winter's Way,more_difficult,false,false,closed
 ,SuperQuad,trail,closed,false,false,,Peavy X-Cut,easier,false,false,closed
 ,Double Runner,trail,closed,,false,,Picaroon,easier,false,false,closed
@@ -127,8 +127,8 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Base Area,trail,closed,false,false,,TheLanding,easier,false,false,closed
 ,Timberline,trail,closed,false,false,,Tin Pants,more_difficult,false,false,closed
 ,Whiffletree,trail,closed,false,false,,Tohaul,more_difficult,false,false,closed
-,Skyline,trail,open,false,true,,Tote Road,more_difficult,false,false,grooming
-,Timberline,trail,closed,false,false,,Tote Road Ext,more_difficult,false,false,closed
+,Skyline,trail,open,true,true,,Tote Road,more_difficult,false,false,grooming
+,Timberline,trail,closed,true,true,,Tote Road Ext,more_difficult,false,false,grooming
 ,Double Runner,trail,closed,false,false,,Tote Road X-Cut,more_difficult,false,false,closed
 ,Skyline,trail,closed,false,false,,Upper Binder,most_difficult,false,false,closed
 ,King Pine,trail,closed,false,false,,Upper Boomauger,most_difficult,false,false,closed
