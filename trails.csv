@@ -23,7 +23,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Timberline,trail,closed,false,false,,Buckskin,more_difficult,false,false,closed
 ,Brackett Basin,trail,closed,,,,Can't Dog One,extremely_difficult,false,false,closed
 ,Brackett Basin,trail,closed,,,,Can't Dog Two,extremely_difficult,false,false,closed
-,SuperQuad,trail,open,true,false,,Candy Side,more_difficult,false,false,open
+,SuperQuad,trail,open,false,false,,Candy Side,more_difficult,false,false,open
 ,Skyline,trail,closed,false,false,,Cant Hook Glade,most_difficult,false,false,closed
 ,King Pine,trail,closed,false,false,,Choker,most_difficult,false,false,closed
 ,Timberline,trail,closed,false,false,,Cinderhoe,more_difficult,false,false,closed
@@ -93,7 +93,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Whiffletree,trail,closed,false,false,,Moose Alley,more_difficult,false,false,closed
 ,Timberline,trail,open,false,true,,Narrow Gauge Ext,most_difficult,false,false,grooming
 ,King Pine,trail,closed,false,false,,Old Winter's Way,more_difficult,false,false,closed
-,SuperQuad,trail,closed,false,false,,Peavy X-Cut,easier,false,false,closed
+,SuperQuad,trail,closed,true,false,,Peavy X-Cut,easier,false,false,closed
 ,Double Runner,trail,closed,,false,,Picaroon,easier,false,false,closed
 ,Skyline,trail,closed,false,false,,Pick Pole,more_difficult,false,false,closed
 ,SuperQuad,trail,open,false,true,,Pinch,more_difficult,false,false,grooming
@@ -112,7 +112,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Whiffletree,trail,closed,false,false,,Slasher,more_difficult,false,false,closed
 ,Brackett Basin,trail,closed,,,,Slashfire,extremely_difficult,false,false,closed
 ,Skyline,trail,closed,true,false,,Sluice,more_difficult,false,false,closed
-,Skyline,trail,closed,true,false,,Sluice Chute,most_difficult,false,false,closed
+,Skyline,trail,closed,false,false,,Sluice Chute,most_difficult,false,false,closed
 ,Skyline,trail,closed,true,false,,Sluice Headwall,most_difficult,false,false,closed
 ,Base Area,trail,closed,false,false,,Snowbrook,easier,false,false,closed
 ,Skyline,trail,closed,false,false,,Spillway X-Cut,most_difficult,false,false,closed
