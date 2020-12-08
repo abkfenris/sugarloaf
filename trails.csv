@@ -23,14 +23,14 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Timberline,trail,closed,false,false,,Buckskin,more_difficult,false,false,closed
 ,Brackett Basin,trail,closed,,,,Can't Dog One,extremely_difficult,false,false,closed
 ,Brackett Basin,trail,closed,,,,Can't Dog Two,extremely_difficult,false,false,closed
-,SuperQuad,trail,open,true,true,,Candy Side,more_difficult,false,false,grooming
+,SuperQuad,trail,open,true,false,,Candy Side,more_difficult,false,false,open
 ,Skyline,trail,closed,false,false,,Cant Hook Glade,most_difficult,false,false,closed
 ,King Pine,trail,closed,false,false,,Choker,most_difficult,false,false,closed
 ,Timberline,trail,closed,false,false,,Cinderhoe,more_difficult,false,false,closed
 ,Whiffletree,trail,closed,false,false,,Condo X-Cut,easier,false,false,closed
 ,Skyline,trail,closed,false,false,,Cribworks,extremely_difficult,false,false,closed
 ,Whiffletree,trail,closed,false,false,,Cross Haul,easier,false,false,closed
-,SuperQuad,trail,open,false,true,,Double Bitter,most_difficult,false,false,grooming
+,SuperQuad,trail,open,false,false,,Double Bitter,most_difficult,false,false,open
 ,Timberline,trail,closed,false,false,,Dropline Glade,most_difficult,false,false,closed
 ,Brackett Basin,trail,closed,,,,Eastern Territory,extremely_difficult,false,false,closed
 ,Brackett Basin,trail,closed,,,,Edger Glade One,extremely_difficult,false,false,closed
@@ -74,7 +74,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Double Runner,trail,closed,false,false,,Lower Narrow Gauge,easier,false,false,closed
 ,Whiffletree,trail,closed,false,false,,Lower Pole Line,easier,false,false,closed
 ,Whiffletree,trail,closed,false,false,,Lower Rookie River Glade,more_difficult,false,false,closed
-,West Mountain,trail,closed,false,false,,Lower Scoot,easier,false,false,closed
+,West Mountain,trail,open,false,false,,Lower Scoot,easier,false,false,open
 ,SuperQuad,trail,closed,false,false,,Lower Sheerboom,most_difficult,false,false,closed
 ,SuperQuad,trail,closed,false,false,,Lower Skidder,extremely_difficult,false,false,closed
 ,Skyline,trail,closed,false,false,,Lower Spillway,more_difficult,false,false,closed
@@ -116,7 +116,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Skyline,trail,closed,true,false,,Sluice Headwall,most_difficult,false,false,closed
 ,Base Area,trail,closed,false,false,,Snowbrook,easier,false,false,closed
 ,Skyline,trail,closed,false,false,,Spillway X-Cut,most_difficult,false,false,closed
-,SuperQuad,trail,open,,true,,Spurline,more_difficult,false,false,grooming
+,SuperQuad,trail,open,,false,,Spurline,more_difficult,false,false,open
 ,Whiffletree,trail,closed,false,false,,Stubs Glade,most_difficult,false,false,closed
 ,Skyline,trail,closed,false,false,,Stump Shot,most_difficult,false,false,closed
 ,SuperQuad,trail,closed,false,false,,Swedish Fiddle Glade,most_difficult,false,false,closed
