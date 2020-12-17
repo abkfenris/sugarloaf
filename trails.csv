@@ -132,7 +132,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Whiffletree,trail,closed,false,false,,Slasher,more_difficult,false,false,closed
 ,Brackett Basin,trail,closed,,,,Slashfire,extremely_difficult,false,false,closed
 ,Skyline,trail,open,false,true,,Sluice,more_difficult,false,false,grooming
-,Skyline,trail,closed,false,true,,Sluice Chute,most_difficult,false,false,grooming
+,Skyline,trail,open,false,true,,Sluice Chute,most_difficult,false,false,grooming
 ,Skyline,trail,closed,false,true,,Sluice Headwall,most_difficult,false,false,grooming
 ,Base Area,trail,closed,true,false,,Snowbrook,easier,false,false,closed
 ,Sugarloaf Outdoor Center,trail,closed,,false,,Snowbrook Trail,more_difficult,false,false,closed
