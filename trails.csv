@@ -87,7 +87,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Skyline,trail,open,false,false,,Lower Spillway,more_difficult,false,false,open
 ,Whiffletree,trail,closed,false,false,,Lower Springboard,more_difficult,false,false,closed
 ,Whiffletree,trail,closed,false,false,,Lower Stubs,easier,false,false,closed
-,Timberline,trail,closed,false,false,,Lower Timberline,easier,false,false,closed
+,Timberline,trail,closed,true,false,,Lower Timberline,easier,false,false,closed
 ,SuperQuad,trail,open,false,true,,Lower Tote Road,easier,false,false,grooming
 ,West Mountain,trail,closed,false,false,,Lower West Mountain,easier,false,false,closed
 ,Whiffletree,trail,closed,false,false,,Lower Whiffletree,easier,false,false,closed
@@ -151,7 +151,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Base Area,trail,open,false,true,,TheLanding,easier,false,false,grooming
 ,Timberline,trail,closed,false,false,,Tin Pants,more_difficult,false,false,closed
 ,Whiffletree,trail,closed,false,false,,Tohaul,more_difficult,false,false,closed
-,Skyline,trail,open,false,true,,Tote Road,more_difficult,false,false,grooming
+,Skyline,trail,open,true,true,,Tote Road,more_difficult,false,false,grooming
 ,Timberline,trail,open,false,true,,Tote Road Ext,more_difficult,false,false,grooming
 ,Double Runner,trail,open,false,true,,Tote Road X-Cut,more_difficult,false,false,grooming
 ,Skyline,trail,closed,false,false,,Upper Binder,most_difficult,false,false,closed
