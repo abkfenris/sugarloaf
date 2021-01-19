@@ -173,7 +173,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Whiffletree,trail,open,false,false,,Upper Springboard,more_difficult,false,false,open
 ,Whiffletree,trail,closed,false,false,,Upper Stubs,easier,false,false,closed
 ,Timberline,trail,closed,false,false,,Upper Timberline,easier,false,false,closed
-,West Mountain,trail,open,false,false,,Upper West Mountain,easier,false,false,open
+,West Mountain,trail,open,false,false,,Upper West Mountain,more_difficult,false,false,open
 ,Whiffletree,trail,open,false,true,,Upper Whiffletree,more_difficult,false,false,grooming
 ,West Mountain,trail,open,false,false,,Upper Windrow,more_difficult,false,false,open
 ,Skyline,trail,open,false,false,,Upper Winters Way,extremely_difficult,false,false,open
