@@ -2,7 +2,7 @@ resort_id,sector,type,opening,hours,notes,name,subtype,vertical,persons,global_s
 ,Skyline,lift,closed,,,#3 T-Bar/Bateau,Lift,,,closed
 ,Double Runner,lift,open,,,Double Runner East,Chairlift,,2.0,open
 ,Double Runner,lift,closed,,,Double Runner West,Chairlift,,2.0,closed
-,King Pine,lift,closed,,,King Pine,Chairlift,,4.0,on_hold
+,King Pine,lift,closed,,,King Pine,Chairlift,,4.0,closed
 ,Base Area,lift,closed,,,Moose-calator,Carpet,,,closed
 ,Base Area,lift,open,,,Sawduster,Chairlift,,4.0,open
 ,Base Area,lift,open,,,Skidway,Chairlift,,3.0,open
