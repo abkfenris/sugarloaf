@@ -31,7 +31,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,King Pine,trail,open,false,true,,Choker,most_difficult,false,false,grooming
 ,Timberline,trail,open,false,false,,Cinderhoe,more_difficult,false,false,open
 ,Whiffletree,trail,open,false,false,,Condo X-Cut,easier,false,false,open
-,Skyline,trail,open,false,false,,Cribworks,extremely_difficult,false,false,open
+,Skyline,trail,open,false,true,,Cribworks,extremely_difficult,false,false,grooming
 ,Whiffletree,trail,open,false,false,,Cross Haul,easier,false,false,open
 ,SuperQuad,trail,open,false,false,,Double Bitter,most_difficult,false,false,open
 ,Timberline,trail,closed,false,false,,Dropline Glade,most_difficult,false,false,closed
