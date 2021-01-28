@@ -1,5 +1,5 @@
 resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trail,with_snowmaking,global_status
-,Sugarloaf Outdoor Center,trail,open,,false,,50 Cents,more_difficult,false,false,open
+,Sugarloaf Outdoor Center,trail,open,,true,,50 Cents,more_difficult,false,false,grooming
 ,Snowfields™ Summit,trail,closed,false,false,,Adrenaline Rush,extremely_difficult,false,false,closed
 ,Brackett Basin,trail,closed,,,,Androscoggin Glade,extremely_difficult,false,false,closed
 ,Snowfields™ Summit,trail,closed,false,false,,Awesome,extremely_difficult,false,false,closed
@@ -40,8 +40,8 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Brackett Basin,trail,closed,,,,Edger Glade One,extremely_difficult,false,false,closed
 ,Brackett Basin,trail,closed,,,,Edger Glade Two,extremely_difficult,false,false,closed
 ,Snowfields™ Summit,trail,closed,false,false,,Extreme Chute,extremely_difficult,false,false,closed
-,Sugarloaf Outdoor Center,trail,open,,false,,Fifty,most_difficult,false,false,open
-,King Pine,trail,open,false,false,,Flume,most_difficult,false,false,open
+,Sugarloaf Outdoor Center,trail,open,,true,,Fifty,most_difficult,false,false,grooming
+,King Pine,trail,open,false,true,,Flume,most_difficult,false,false,grooming
 ,King Pine,trail,closed,false,false,,Freds Pitch Glade,most_difficult,false,false,closed
 ,SuperQuad,trail,open,false,true,,Gin Pole,more_difficult,false,false,grooming
 ,Brackett Basin,trail,closed,,,,Golden Road,extremely_difficult,false,false,closed
