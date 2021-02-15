@@ -102,7 +102,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Timberline,trail,open,false,true,,Narrow Gauge Ext,most_difficult,false,false,grooming
 ,Sugarloaf Outdoor Center,trail,open,,true,,Narrow Gauge Pathway,easier,false,false,grooming
 ,Sugarloaf Outdoor Center,trail,open,,true,,Narrow Gauge Spur,easier,false,false,grooming
-,Sugarloaf Outdoor Center,trail,open,,true,,North Horn,most_difficult,false,false,grooming
+,Sugarloaf Outdoor Center,trail,open,,false,,North Horn,most_difficult,false,false,open
 ,Sugarloaf Outdoor Center,trail,open,,true,,Oh My Gosh Loop,easier,false,false,grooming
 ,Sugarloaf Outdoor Center,trail,open,,true,,Old Race Trail,more_difficult,false,false,grooming
 ,King Pine,trail,open,false,false,,Old Winter's Way,more_difficult,false,false,open
@@ -173,7 +173,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Whiffletree,trail,open,false,true,,Upper Springboard,more_difficult,false,false,grooming
 ,Whiffletree,trail,open,false,false,,Upper Stubs,easier,false,false,open
 ,Timberline,trail,open,false,true,,Upper Timberline,easier,false,false,grooming
-,West Mountain,trail,open,false,true,,Upper West Mountain,more_difficult,false,false,grooming
+,West Mountain,trail,open,false,true,,Upper West Mountain,easier,false,false,grooming
 ,Whiffletree,trail,open,false,true,,Upper Whiffletree,more_difficult,false,false,grooming
 ,West Mountain,trail,open,false,true,,Upper Windrow,more_difficult,false,false,grooming
 ,Skyline,trail,open,false,false,,Upper Winters Way,extremely_difficult,false,false,open
