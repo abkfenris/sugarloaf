@@ -1,5 +1,5 @@
 resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trail,with_snowmaking,global_status
-,Sugarloaf Outdoor Center,trail,open,,true,,50 Cents,more_difficult,false,false,grooming
+,Sugarloaf Outdoor Center,trail,open,,false,,50 Cents,more_difficult,false,false,open
 ,Snowfields™ Summit,trail,closed,false,false,,Adrenaline Rush,extremely_difficult,false,false,closed
 ,Brackett Basin,trail,open,,,,Androscoggin Glade,extremely_difficult,false,false,open
 ,Snowfields™ Summit,trail,closed,false,false,,Awesome,extremely_difficult,false,false,closed
@@ -35,19 +35,19 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Whiffletree,trail,open,false,true,,Cross Haul,easier,false,false,grooming
 ,SuperQuad,trail,open,false,false,,Double Bitter,most_difficult,false,false,open
 ,Timberline,trail,open,false,false,,Dropline Glade,most_difficult,false,false,open
-,Sugarloaf Outdoor Center,trail,open,,true,,East Branch,more_difficult,false,false,grooming
+,Sugarloaf Outdoor Center,trail,open,,false,,East Branch,more_difficult,false,false,open
 ,Brackett Basin,trail,open,,,,Eastern Territory,extremely_difficult,false,false,open
 ,Brackett Basin,trail,open,,,,Edger Glade One,extremely_difficult,false,false,open
 ,Brackett Basin,trail,open,,,,Edger Glade Two,extremely_difficult,false,false,open
 ,Snowfields™ Summit,trail,closed,false,false,,Extreme Chute,extremely_difficult,false,false,closed
-,Sugarloaf Outdoor Center,trail,open,,true,,Fifty,most_difficult,false,false,grooming
+,Sugarloaf Outdoor Center,trail,open,,false,,Fifty,most_difficult,false,false,open
 ,King Pine,trail,open,false,true,,Flume,most_difficult,false,false,grooming
 ,King Pine,trail,open,false,false,,Freds Pitch Glade,most_difficult,false,false,open
 ,SuperQuad,trail,open,false,true,,Gin Pole,more_difficult,false,false,grooming
 ,Brackett Basin,trail,open,,,,Golden Road,extremely_difficult,false,false,open
 ,Skyline,trail,open,false,false,,Gondi Glade,most_difficult,false,false,open
 ,Skyline,trail,open,false,true,,Gondola Line,more_difficult,false,false,grooming
-,Snowfields™ Summit,trail,open,false,true,,Gondola Line Ext,extremely_difficult,false,false,grooming
+,Snowfields™ Summit,trail,open,false,false,,Gondola Line Ext,extremely_difficult,false,false,open
 ,West Mountain,trail,open,false,true,,Good Chance X-Cut,easier,false,false,grooming
 ,West Mountain,trail,open,false,false,,Greenhorn Glade,more_difficult,false,false,open
 ,Snowfields™ Summit,trail,closed,false,false,,Hard Tack,most_difficult,false,false,closed
@@ -57,13 +57,13 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Snowfields™ Summit,trail,closed,false,false,,Hell's Gate,extremely_difficult,false,false,closed
 ,Brackett Basin,trail,open,,,,High Ball Glade,more_difficult,false,false,open
 ,Snowfields™ Summit,trail,closed,false,false,,High Rigger,extremely_difficult,false,false,closed
-,Sugarloaf Outdoor Center,trail,open,,true,,Highland Trail,more_difficult,false,false,grooming
+,Sugarloaf Outdoor Center,trail,open,,false,,Highland Trail,more_difficult,false,false,open
 ,West Mountain,trail,open,false,true,,Horseshoe,easier,false,false,grooming
 ,Snowfields™ Summit,trail,closed,false,false,,Ignitor,extremely_difficult,false,false,closed
-,Sugarloaf Outdoor Center,trail,open,,true,,Inferno,more_difficult,false,false,grooming
+,Sugarloaf Outdoor Center,trail,open,,false,,Inferno,more_difficult,false,false,open
 ,Whiffletree,trail,open,false,false,,Jackpot Glade,more_difficult,false,false,open
 ,Snowfields™ Summit,trail,closed,false,false,,Jagger,extremely_difficult,false,false,closed
-,Whiffletree,trail,open,false,true,,Jill Poke,more_difficult,false,false,grooming
+,Whiffletree,trail,open,false,false,,Jill Poke,more_difficult,false,false,open
 ,SuperQuad,trail,open,false,false,,Kickback,most_difficult,false,false,open
 ,SuperQuad,trail,open,false,true,,Kings Landing,more_difficult,false,false,grooming
 ,Skyline,trail,open,false,false,,Kurf Glade,most_difficult,false,false,open
@@ -73,19 +73,19 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,SuperQuad,trail,open,false,true,,Lower Binder,more_difficult,false,false,grooming
 ,King Pine,trail,open,false,true,,Lower Boomauger,more_difficult,false,false,grooming
 ,Skyline,trail,open,false,false,,Lower Bubblecuffer,most_difficult,false,false,open
-,Whiffletree,trail,open,false,true,,Lower Buckboard,more_difficult,false,false,grooming
+,Whiffletree,trail,open,false,false,,Lower Buckboard,more_difficult,false,false,open
 ,SuperQuad,trail,open,false,true,,Lower Competition Hill,more_difficult,false,false,grooming
 ,Whiffletree,trail,open,false,false,,Lower Cruiser,more_difficult,false,false,open
 ,West Mountain,trail,open,false,true,,Lower Glancer,easier,false,false,grooming
 ,Brackett Basin,trail,open,,,,Lower Kennebec Glade,most_difficult,false,false,open
 ,Double Runner,trail,open,false,true,,Lower Narrow Gauge,easier,false,false,grooming
-,Whiffletree,trail,open,false,true,,Lower Pole Line,easier,false,false,grooming
+,Whiffletree,trail,open,false,false,,Lower Pole Line,easier,false,false,open
 ,Whiffletree,trail,open,false,false,,Lower Rookie River Glade,more_difficult,false,false,open
 ,West Mountain,trail,open,false,true,,Lower Scoot,easier,false,false,grooming
 ,SuperQuad,trail,open,false,false,,Lower Sheerboom,most_difficult,false,false,open
 ,SuperQuad,trail,open,false,true,,Lower Skidder,extremely_difficult,false,false,grooming
 ,Skyline,trail,open,false,true,,Lower Spillway,more_difficult,false,false,grooming
-,Whiffletree,trail,open,false,true,,Lower Springboard,more_difficult,false,false,grooming
+,Whiffletree,trail,open,false,false,,Lower Springboard,more_difficult,false,false,open
 ,Whiffletree,trail,open,false,true,,Lower Stubs,easier,false,false,grooming
 ,Timberline,trail,open,false,true,,Lower Timberline,easier,false,false,grooming
 ,SuperQuad,trail,open,false,true,,Lower Tote Road,easier,false,false,grooming
@@ -98,12 +98,12 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Skyline,trail,open,false,true,,Midstation X-Cut,more_difficult,false,false,grooming
 ,King Pine,trail,open,false,false,,Misery Whip,extremely_difficult,false,false,open
 ,Whiffletree,trail,open,false,true,,Moose Alley,more_difficult,false,false,grooming
-,Sugarloaf Outdoor Center,trail,open,,true,,Moose Pond Loop,easier,false,false,grooming
+,Sugarloaf Outdoor Center,trail,open,,false,,Moose Pond Loop,easier,false,false,open
 ,Timberline,trail,open,false,true,,Narrow Gauge Ext,most_difficult,false,false,grooming
 ,Sugarloaf Outdoor Center,trail,open,,false,,Narrow Gauge Pathway,easier,false,false,open
 ,Sugarloaf Outdoor Center,trail,open,,false,,Narrow Gauge Spur,easier,false,false,open
-,Sugarloaf Outdoor Center,trail,open,,true,,North Horn,most_difficult,false,false,grooming
-,Sugarloaf Outdoor Center,trail,open,,true,,Oh My Gosh Loop,easier,false,false,grooming
+,Sugarloaf Outdoor Center,trail,open,,false,,North Horn,most_difficult,false,false,open
+,Sugarloaf Outdoor Center,trail,open,,false,,Oh My Gosh Loop,easier,false,false,open
 ,Sugarloaf Outdoor Center,trail,open,,false,,Old Race Trail,more_difficult,false,false,open
 ,King Pine,trail,open,false,false,,Old Winter's Way,more_difficult,false,false,open
 ,SuperQuad,trail,open,false,true,,Peavy X-Cut,easier,false,false,grooming
@@ -119,15 +119,15 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,West Mountain,trail,open,false,false,,Ram Pasture Glade,most_difficult,false,false,open
 ,King Pine,trail,open,false,true,,Ramdown,more_difficult,false,false,grooming
 ,Brackett Basin,trail,open,,,,Red Horse Glade,more_difficult,false,false,open
-,Sugarloaf Outdoor Center,trail,open,,true,,Red Stallion,more_difficult,false,false,grooming
+,Sugarloaf Outdoor Center,trail,open,,false,,Red Stallion,more_difficult,false,false,open
 ,Sugarloaf Outdoor Center,trail,closed,,false,,Redington Connector,easier,false,false,closed
 ,Sugarloaf Outdoor Center,trail,closed,,false,,Redington Pond Loop,more_difficult,false,false,closed
 ,King Pine,trail,open,false,false,,Ripsaw,extremely_difficult,false,false,open
 ,Whiffletree,trail,open,false,true,,Rollway (EWD),easier,false,false,grooming
 ,Brackett Basin,trail,open,,,,Rough Cut Glade,more_difficult,false,false,open
-,Sugarloaf Outdoor Center,trail,open,,true,,S-Turns,easier,false,false,grooming
+,Sugarloaf Outdoor Center,trail,open,,false,,S-Turns,easier,false,false,open
 ,Double Runner,trail,closed,false,false,,Schipper's Streak,easier,false,false,closed
-,Sugarloaf Outdoor Center,trail,open,,true,,Seven Bridges,more_difficult,false,false,grooming
+,Sugarloaf Outdoor Center,trail,open,,false,,Seven Bridges,more_difficult,false,false,open
 ,SuperQuad,trail,open,false,false,,Sheerboom,most_difficult,false,false,open
 ,Whiffletree,trail,open,false,true,,Slasher,more_difficult,false,false,grooming
 ,Brackett Basin,trail,open,,,,Slashfire,extremely_difficult,false,false,open
@@ -135,18 +135,18 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Skyline,trail,open,false,true,,Sluice Chute,most_difficult,false,false,grooming
 ,Skyline,trail,open,false,true,,Sluice Headwall,most_difficult,false,false,grooming
 ,Base Area,trail,open,false,true,,Snowbrook,easier,false,false,grooming
-,Sugarloaf Outdoor Center,trail,open,,true,,Snowbrook Trail,more_difficult,false,false,grooming
-,Sugarloaf Outdoor Center,trail,open,,true,,South Horn,most_difficult,false,false,grooming
+,Sugarloaf Outdoor Center,trail,open,,false,,Snowbrook Trail,more_difficult,false,false,open
+,Sugarloaf Outdoor Center,trail,open,,false,,South Horn,most_difficult,false,false,open
 ,Skyline,trail,open,false,true,,Spillway X-Cut,most_difficult,false,false,grooming
 ,SuperQuad,trail,open,,true,,Spurline,more_difficult,false,false,grooming
 ,Whiffletree,trail,open,false,false,,Stubs Glade,most_difficult,false,false,open
 ,Skyline,trail,open,false,false,,Stump Shot,most_difficult,false,false,open
-,Sugarloaf Outdoor Center,trail,open,,true,,Sunny Breeze,easier,false,false,grooming
+,Sugarloaf Outdoor Center,trail,open,,false,,Sunny Breeze,easier,false,false,open
 ,SuperQuad,trail,open,false,false,,Swedish Fiddle Glade,most_difficult,false,false,open
 ,Brackett Basin,trail,open,,,,Sweeper Glade One,extremely_difficult,false,false,open
 ,Brackett Basin,trail,open,,,,Sweeper Glade Two,extremely_difficult,false,false,open
 ,West Mountain,trail,open,false,false,,Telos Cut,most_difficult,false,false,open
-,Sugarloaf Outdoor Center,trail,open,,true,,The Vista,more_difficult,false,false,grooming
+,Sugarloaf Outdoor Center,trail,open,,false,,The Vista,more_difficult,false,false,open
 ,Base Area,trail,open,false,true,,TheBirches,easier,false,false,grooming
 ,Base Area,trail,open,false,true,,TheLanding,easier,false,false,grooming
 ,Timberline,trail,open,false,false,,Tin Pants,more_difficult,false,false,open
@@ -157,7 +157,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Skyline,trail,open,false,false,,Upper Binder,most_difficult,false,false,open
 ,King Pine,trail,open,false,false,,Upper Boomauger,most_difficult,false,false,open
 ,Skyline,trail,open,false,false,,Upper Bubblecuffer,extremely_difficult,false,false,open
-,Whiffletree,trail,open,false,true,,Upper Buckboard,more_difficult,false,false,grooming
+,Whiffletree,trail,open,false,false,,Upper Buckboard,more_difficult,false,false,open
 ,SuperQuad,trail,open,false,true,,Upper Competition Hill,most_difficult,false,false,grooming
 ,Whiffletree,trail,open,false,false,,Upper Cruiser,more_difficult,false,false,open
 ,Skyline,trail,open,false,true,,Upper Double Bitter,most_difficult,false,false,grooming
@@ -165,22 +165,22 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Skyline,trail,open,false,true,,Upper Gondola Line,extremely_difficult,false,false,grooming
 ,Brackett Basin,trail,open,,,,Upper Kennebec Glade,most_difficult,false,false,open
 ,Skyline,trail,open,false,true,,Upper Narrow Gauge,most_difficult,false,false,grooming
-,Whiffletree,trail,open,false,true,,Upper Pole Line,more_difficult,false,false,grooming
+,Whiffletree,trail,open,false,false,,Upper Pole Line,more_difficult,false,false,open
 ,Whiffletree,trail,open,false,false,,Upper Rookie River Glade,most_difficult,false,false,open
 ,West Mountain,trail,open,false,true,,Upper Scoot,more_difficult,false,false,grooming
 ,SuperQuad,trail,open,false,true,,Upper Skidder,extremely_difficult,false,false,grooming
 ,Skyline,trail,open,false,true,,Upper Spillway,most_difficult,false,false,grooming
-,Whiffletree,trail,open,false,true,,Upper Springboard,more_difficult,false,false,grooming
+,Whiffletree,trail,open,false,false,,Upper Springboard,more_difficult,false,false,open
 ,Whiffletree,trail,open,false,true,,Upper Stubs,easier,false,false,grooming
 ,Timberline,trail,open,false,true,,Upper Timberline,easier,false,false,grooming
 ,West Mountain,trail,open,false,true,,Upper West Mountain,easier,false,false,grooming
 ,Whiffletree,trail,open,false,true,,Upper Whiffletree,more_difficult,false,false,grooming
 ,West Mountain,trail,open,false,true,,Upper Windrow,more_difficult,false,false,grooming
 ,Skyline,trail,open,false,false,,Upper Winters Way,extremely_difficult,false,false,open
-,Sugarloaf Outdoor Center,trail,open,,true,,V2,more_difficult,false,false,grooming
-,Sugarloaf Outdoor Center,trail,open,,true,,Warming Hut Trail,easier,false,false,grooming
+,Sugarloaf Outdoor Center,trail,open,,false,,V2,more_difficult,false,false,open
+,Sugarloaf Outdoor Center,trail,open,,false,,Warming Hut Trail,easier,false,false,open
 ,Skyline,trail,open,false,true,,Wedge,most_difficult,false,false,grooming
-,Sugarloaf Outdoor Center,trail,open,,true,,West Branch,more_difficult,false,false,grooming
+,Sugarloaf Outdoor Center,trail,open,,false,,West Branch,more_difficult,false,false,open
 ,West Mountain,trail,open,false,true,,West Mountain X-Cut,easier,false,false,grooming
 ,Skyline,trail,open,false,false,,West Sluice Chute,most_difficult,false,false,open
 ,Skyline,trail,open,false,true,,White Nitro,extremely_difficult,false,false,grooming
