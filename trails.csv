@@ -21,7 +21,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,SuperQuad,trail,open,false,false,,Branding Ax Glade,extremely_difficult,false,false,open
 ,SuperQuad,trail,open,false,true,,Bridle Chain,more_difficult,false,false,grooming
 ,Whiffletree,trail,open,false,false,,Broccoli Garden Glade,most_difficult,false,false,open
-,Snowfields™ Summit,trail,closed,false,false,,Bubblecuffer Ext,extremely_difficult,false,false,closed
+,Snowfields™ Summit,trail,open,false,false,,Bubblecuffer Ext,extremely_difficult,false,false,open
 ,West Mountain,trail,open,false,true,,Bucksaw X-Cut,easier,false,false,grooming
 ,Timberline,trail,open,false,false,,Buckskin,more_difficult,false,false,open
 ,Brackett Basin,trail,open,,,,Can't Dog One,extremely_difficult,false,false,open
