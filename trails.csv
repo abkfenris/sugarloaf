@@ -35,7 +35,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Whiffletree,trail,open,false,true,,Cross Haul,easier,false,false,grooming
 ,SuperQuad,trail,open,false,false,,Double Bitter,most_difficult,false,false,open
 ,Timberline,trail,open,false,false,,Dropline Glade,most_difficult,false,false,open
-,Sugarloaf Outdoor Center,trail,open,,false,,East Branch,more_difficult,false,false,open
+,Sugarloaf Outdoor Center,trail,open,,true,,East Branch,more_difficult,false,false,grooming
 ,Brackett Basin,trail,open,,,,Eastern Territory,extremely_difficult,false,false,open
 ,Brackett Basin,trail,open,,,,Edger Glade One,extremely_difficult,false,false,open
 ,Brackett Basin,trail,open,,,,Edger Glade Two,extremely_difficult,false,false,open
@@ -100,10 +100,10 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Whiffletree,trail,open,false,false,,Moose Alley,more_difficult,false,false,open
 ,Sugarloaf Outdoor Center,trail,open,,true,,Moose Pond Loop,easier,false,false,grooming
 ,Timberline,trail,open,false,true,,Narrow Gauge Ext,most_difficult,false,false,grooming
-,Sugarloaf Outdoor Center,trail,open,,true,,Narrow Gauge Pathway,easier,false,false,grooming
-,Sugarloaf Outdoor Center,trail,open,,true,,Narrow Gauge Spur,easier,false,false,grooming
-,Sugarloaf Outdoor Center,trail,open,,true,,North Horn,most_difficult,false,false,grooming
-,Sugarloaf Outdoor Center,trail,open,,false,,Oh My Gosh Loop,easier,false,false,open
+,Sugarloaf Outdoor Center,trail,open,,false,,Narrow Gauge Pathway,easier,false,false,open
+,Sugarloaf Outdoor Center,trail,open,,false,,Narrow Gauge Spur,easier,false,false,open
+,Sugarloaf Outdoor Center,trail,open,,false,,North Horn,most_difficult,false,false,open
+,Sugarloaf Outdoor Center,trail,open,,true,,Oh My Gosh Loop,easier,false,false,grooming
 ,Sugarloaf Outdoor Center,trail,open,,true,,Old Race Trail,more_difficult,false,false,grooming
 ,King Pine,trail,open,false,false,,Old Winter's Way,more_difficult,false,false,open
 ,SuperQuad,trail,open,false,true,,Peavy X-Cut,easier,false,false,grooming
@@ -114,12 +114,12 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Sugarloaf Outdoor Center,trail,open,,true,,Pretty Bog,easier,false,false,grooming
 ,West Mountain,trail,open,false,false,,Pulaski,most_difficult,false,false,open
 ,Snowfields™ Summit,trail,closed,false,false,,Pure Heat,extremely_difficult,false,false,closed
-,Sugarloaf Outdoor Center,trail,closed,,true,,Race Loop,most_difficult,false,false,grooming
+,Sugarloaf Outdoor Center,trail,open,,true,,Race Loop,most_difficult,false,false,grooming
 ,West Mountain,trail,open,false,false,,Raker Tooth Glade,most_difficult,false,false,open
 ,West Mountain,trail,open,false,false,,Ram Pasture Glade,most_difficult,false,false,open
 ,King Pine,trail,open,false,true,,Ramdown,more_difficult,false,false,grooming
 ,Brackett Basin,trail,open,,,,Red Horse Glade,more_difficult,false,false,open
-,Sugarloaf Outdoor Center,trail,open,,true,,Red Stallion,more_difficult,false,false,grooming
+,Sugarloaf Outdoor Center,trail,open,,false,,Red Stallion,more_difficult,false,false,open
 ,Sugarloaf Outdoor Center,trail,closed,,false,,Redington Connector,easier,false,false,closed
 ,Sugarloaf Outdoor Center,trail,closed,,false,,Redington Pond Loop,more_difficult,false,false,closed
 ,King Pine,trail,open,false,false,,Ripsaw,extremely_difficult,false,false,open
@@ -127,7 +127,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Brackett Basin,trail,open,,,,Rough Cut Glade,more_difficult,false,false,open
 ,Sugarloaf Outdoor Center,trail,open,,true,,S-Turns,easier,false,false,grooming
 ,Double Runner,trail,closed,false,false,,Schipper's Streak,easier,false,false,closed
-,Sugarloaf Outdoor Center,trail,closed,,true,,Seven Bridges,more_difficult,false,false,grooming
+,Sugarloaf Outdoor Center,trail,open,,true,,Seven Bridges,more_difficult,false,false,grooming
 ,SuperQuad,trail,open,false,false,,Sheerboom,most_difficult,false,false,open
 ,Whiffletree,trail,open,false,true,,Slasher,more_difficult,false,false,grooming
 ,Brackett Basin,trail,open,,,,Slashfire,extremely_difficult,false,false,open
@@ -136,7 +136,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Skyline,trail,open,false,true,,Sluice Headwall,most_difficult,false,false,grooming
 ,Base Area,trail,open,false,true,,Snowbrook,easier,false,false,grooming
 ,Sugarloaf Outdoor Center,trail,open,,true,,Snowbrook Trail,more_difficult,false,false,grooming
-,Sugarloaf Outdoor Center,trail,open,,true,,South Horn,most_difficult,false,false,grooming
+,Sugarloaf Outdoor Center,trail,open,,false,,South Horn,most_difficult,false,false,open
 ,Skyline,trail,open,false,true,,Spillway X-Cut,most_difficult,false,false,grooming
 ,SuperQuad,trail,open,,true,,Spurline,more_difficult,false,false,grooming
 ,Whiffletree,trail,open,false,false,,Stubs Glade,most_difficult,false,false,open
@@ -180,7 +180,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Sugarloaf Outdoor Center,trail,open,,true,,V2,more_difficult,false,false,grooming
 ,Sugarloaf Outdoor Center,trail,open,,true,,Warming Hut Trail,easier,false,false,grooming
 ,Skyline,trail,open,false,true,,Wedge,most_difficult,false,false,grooming
-,Sugarloaf Outdoor Center,trail,open,,false,,West Branch,more_difficult,false,false,open
+,Sugarloaf Outdoor Center,trail,open,,true,,West Branch,more_difficult,false,false,grooming
 ,West Mountain,trail,open,false,false,,West Mountain X-Cut,easier,false,false,open
 ,Skyline,trail,open,false,false,,West Sluice Chute,most_difficult,false,false,open
 ,Skyline,trail,open,false,true,,White Nitro,extremely_difficult,false,false,grooming
