@@ -182,7 +182,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Skyline,trail,open,false,true,,Wedge,most_difficult,false,false,grooming
 ,Sugarloaf Outdoor Center,trail,open,,true,,West Branch,more_difficult,false,false,grooming
 ,West Mountain,trail,open,false,true,,West Mountain X-Cut,easier,false,false,grooming
-,Skyline,trail,open,false,true,,West Sluice Chute,most_difficult,false,false,grooming
+,Skyline,trail,open,false,false,,West Sluice Chute,most_difficult,false,false,open
 ,Skyline,trail,closed,false,false,,White Nitro,extremely_difficult,false,false,closed
 ,Snowfields™ Summit,trail,closed,false,false,,White Nitro Ext,extremely_difficult,false,false,closed
 ,King Pine,trail,open,false,true,,Widowmaker,most_difficult,false,false,grooming
