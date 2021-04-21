@@ -129,7 +129,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Double Runner,trail,closed,false,false,,Schipper's Streak,easier,false,false,closed
 ,Sugarloaf Outdoor Center,trail,open,,true,,Seven Bridges,more_difficult,false,false,grooming
 ,SuperQuad,trail,closed,false,false,,Sheerboom,most_difficult,false,false,closed
-,Whiffletree,trail,open,false,false,,Slasher,more_difficult,false,false,open
+,Whiffletree,trail,closed,false,false,,Slasher,more_difficult,false,false,closed
 ,Brackett Basin,trail,closed,,,,Slashfire,extremely_difficult,false,false,closed
 ,Skyline,trail,open,false,false,,Sluice,more_difficult,false,false,open
 ,Skyline,trail,open,false,false,,Sluice Chute,most_difficult,false,false,open
@@ -174,7 +174,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Whiffletree,trail,closed,false,false,,Upper Stubs,easier,false,false,closed
 ,Timberline,trail,open,false,false,,Upper Timberline,easier,false,false,open
 ,West Mountain,trail,closed,false,false,,Upper West Mountain,easier,false,false,closed
-,Whiffletree,trail,open,false,false,,Upper Whiffletree,more_difficult,false,false,open
+,Whiffletree,trail,closed,false,false,,Upper Whiffletree,more_difficult,false,false,closed
 ,West Mountain,trail,closed,false,false,,Upper Windrow,more_difficult,false,false,closed
 ,Skyline,trail,closed,false,false,,Upper Winters Way,extremely_difficult,false,false,closed
 ,Sugarloaf Outdoor Center,trail,open,,false,,V2,more_difficult,false,false,open
