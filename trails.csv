@@ -26,12 +26,12 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Timberline,trail,closed,false,false,,Buckskin,more_difficult,false,false,closed
 ,Brackett Basin,trail,closed,,,,Can't Dog One,extremely_difficult,false,false,closed
 ,Brackett Basin,trail,closed,,,,Can't Dog Two,extremely_difficult,false,false,closed
-,SuperQuad,trail,open,false,true,,Candy Side,more_difficult,false,false,grooming
+,SuperQuad,trail,open,false,false,,Candy Side,more_difficult,false,false,open
 ,Skyline,trail,closed,false,false,,Cant Hook Glade,most_difficult,false,false,closed
 ,King Pine,trail,closed,false,false,,Choker,most_difficult,false,false,closed
 ,Timberline,trail,closed,false,false,,Cinderhoe,more_difficult,false,false,closed
 ,Whiffletree,trail,closed,false,false,,Condo X-Cut,easier,false,false,closed
-,Skyline,trail,open,false,true,,Cribworks,extremely_difficult,false,false,grooming
+,Skyline,trail,open,false,false,,Cribworks,extremely_difficult,false,false,open
 ,Whiffletree,trail,closed,false,false,,Cross Haul,easier,false,false,closed
 ,SuperQuad,trail,closed,false,false,,Double Bitter,most_difficult,false,false,closed
 ,Timberline,trail,closed,false,false,,Dropline Glade,most_difficult,false,false,closed
@@ -164,7 +164,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,West Mountain,trail,closed,false,false,,Upper Glancer,easier,false,false,closed
 ,Skyline,trail,closed,false,false,,Upper Gondola Line,extremely_difficult,false,false,closed
 ,Brackett Basin,trail,closed,,,,Upper Kennebec Glade,most_difficult,false,false,closed
-,Skyline,trail,open,false,true,,Upper Narrow Gauge,most_difficult,false,false,grooming
+,Skyline,trail,open,false,false,,Upper Narrow Gauge,most_difficult,false,false,open
 ,Whiffletree,trail,closed,false,false,,Upper Pole Line,more_difficult,false,false,closed
 ,Whiffletree,trail,closed,false,false,,Upper Rookie River Glade,most_difficult,false,false,closed
 ,West Mountain,trail,closed,false,false,,Upper Scoot,more_difficult,false,false,closed
