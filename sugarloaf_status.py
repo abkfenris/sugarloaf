@@ -1,13 +1,16 @@
 #!/usr/bin/env python
 # coding: utf-8
+from bs4 import BeautifulSoup
 import requests
 import pandas as pd
 
-MOBILE_SUNDAY_RIVER_CONDITIONS_URL = (
+MOBILE_SUGARLOAF_CONDITIONS_URL = (
     "http://spotlio-snowconditions.s3.amazonaws.com/sugarloaf/status.json"
 )
 
-response = requests.get(MOBILE_SUNDAY_RIVER_CONDITIONS_URL)
+MOUNTAIN_REPORT_HTML = "https://www.sugarloaf.com/mountain-report"
+
+response = requests.get(MOBILE_SUGARLOAF_CONDITIONS_URL)
 json = response.json()
 
 
@@ -44,3 +47,27 @@ trails_df.to_csv("trails.csv", index=False)
 
 lifts_df = lifts_df.sort_values("name")
 lifts_df.to_csv("lifts.csv", index=False)
+
+response = requests.get(MOUNTAIN_REPORT_HTML)
+soup = BeautifulSoup(response.text)
+
+longest_div = None
+
+for div in soup.findAll("div", class_="content"):
+    div_text = div.getText()
+
+    if (
+        "Last Updated" not in div_text
+        and "Trail Status" not in div_text
+        and "Snow Making" not in div_text
+        and "Swedish Fiddle Glade" not in div_text
+    ):
+
+        try:
+            if len(longest_div.getText()) < len(div_text):
+                longest_div = div
+        except AttributeError:
+            longest_div = div
+
+with open("report.html", "w") as f:
+    f.write(str(longest_div))
