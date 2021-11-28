@@ -106,7 +106,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Sugarloaf Outdoor Center,trail,closed,,false,,Oh My Gosh Loop,easier,false,false,closed
 ,Sugarloaf Outdoor Center,trail,closed,,false,,Old Race Trail,more_difficult,false,false,closed
 ,King Pine,trail,closed,false,false,,Old Winter's Way,more_difficult,false,false,closed
-,SuperQuad,trail,closed,true,false,,Peavy X-Cut,easier,false,false,closed
+,SuperQuad,trail,closed,false,false,,Peavy X-Cut,easier,false,false,closed
 ,Double Runner,trail,closed,,false,,Picaroon,easier,false,false,closed
 ,Skyline,trail,closed,false,false,,Pick Pole,more_difficult,false,false,closed
 ,SuperQuad,trail,open,false,true,,Pinch,more_difficult,false,false,grooming
