@@ -8,7 +8,7 @@ resort_id,sector,type,opening,hours,notes,name,subtype,vertical,persons,global_s
 ,Base Area,lift,closed,,,Skidway,Chairlift,,3.0,closed
 ,Skyline,lift,closed,,,Skyline,Chairlift,,4.0,closed
 ,Base Area,lift,closed,,,Snubber,Chairlift,,3.0,closed
-,SuperQuad,lift,closed,,,SuperQuad,Chairlift,,4.0,closed
-,Timberline,lift,closed,,,Timberline,Chairlift,,4.0,closed
+,SuperQuad,lift,open,,,SuperQuad,Chairlift,,4.0,open
+,Timberline,lift,closed,,,Timberline,Chairlift,,4.0,on_hold
 ,West Mountain,lift,closed,,,West Mountain,Chairlift,,2.0,closed
 ,Whiffletree,lift,closed,,,Whiffletree SuperQuad,Chairlift,,4.0,closed
