@@ -129,7 +129,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Double Runner,trail,closed,false,false,,Schipper's Streak,easier,false,false,closed
 ,Sugarloaf Outdoor Center,trail,closed,,false,,Seven Bridges,more_difficult,false,false,closed
 ,SuperQuad,trail,closed,false,false,,Sheerboom,most_difficult,false,false,closed
-,Whiffletree,trail,closed,false,false,,Slasher,more_difficult,false,false,closed
+,Whiffletree,trail,closed,true,false,,Slasher,more_difficult,false,false,closed
 ,Brackett Basin,trail,closed,false,false,,Slashfire,extremely_difficult,false,false,closed
 ,Skyline,trail,open,false,true,,Sluice,more_difficult,false,false,grooming
 ,Skyline,trail,closed,false,false,,Sluice Chute,most_difficult,false,false,closed
