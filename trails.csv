@@ -147,8 +147,8 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Brackett Basin,trail,closed,false,false,,Sweeper Glade Two,extremely_difficult,false,false,closed
 ,West Mountain,trail,closed,false,false,,Telos Cut,most_difficult,false,false,closed
 ,Sugarloaf Outdoor Center,trail,closed,,false,,The Vista,more_difficult,false,false,closed
-,Base Area,trail,closed,true,false,,TheBirches,easier,false,false,closed
-,Base Area,trail,open,true,true,,TheLanding,easier,false,false,grooming
+,Base Area,trail,closed,false,false,,TheBirches,easier,false,false,closed
+,Base Area,trail,open,false,true,,TheLanding,easier,false,false,grooming
 ,Timberline,trail,closed,false,false,,Tin Pants,more_difficult,false,false,closed
 ,Whiffletree,trail,closed,false,false,,Tohaul,more_difficult,false,false,closed
 ,Skyline,trail,open,false,true,,Tote Road,more_difficult,false,false,grooming
