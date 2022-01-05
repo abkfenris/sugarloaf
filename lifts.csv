@@ -1,14 +1,14 @@
 resort_id,sector,type,opening,hours,notes,name,subtype,vertical,persons,global_status
 ,Skyline,lift,closed,,,#3 T-Bar/Bateau,Lift,,,closed
-,Double Runner,lift,open,,,Double Runner East,Chairlift,,2.0,open
+,Double Runner,lift,closed,,,Double Runner East,Chairlift,,2.0,closed
 ,Double Runner,lift,closed,,,Double Runner West,Chairlift,,2.0,closed
 ,King Pine,lift,closed,,,King Pine,Chairlift,,4.0,closed
 ,Base Area,lift,closed,,,Moose-calator,Carpet,,,closed
 ,Base Area,lift,closed,,,Sawduster,Chairlift,,4.0,closed
 ,Base Area,lift,closed,,,Skidway,Chairlift,,3.0,closed
-,Skyline,lift,open,,,Skyline,Chairlift,,4.0,open
-,Base Area,lift,open,,,Snubber,Chairlift,,3.0,open
-,SuperQuad,lift,open,,,SuperQuad,Chairlift,,4.0,open
+,Skyline,lift,closed,,,Skyline,Chairlift,,4.0,closed
+,Base Area,lift,closed,,,Snubber,Chairlift,,3.0,closed
+,SuperQuad,lift,closed,,,SuperQuad,Chairlift,,4.0,closed
 ,Timberline,lift,closed,,,Timberline,Chairlift,,4.0,closed
 ,West Mountain,lift,closed,,,West Mountain,Chairlift,,2.0,closed
-,Whiffletree,lift,open,,,Whiffletree SuperQuad,Chairlift,,4.0,open
+,Whiffletree,lift,closed,,,Whiffletree SuperQuad,Chairlift,,4.0,closed
