@@ -41,7 +41,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Brackett Basin,trail,closed,false,false,,Edger Glade Two,extremely_difficult,false,false,closed
 ,Snowfields™ Summit,trail,closed,false,false,,Extreme Chute,extremely_difficult,false,false,closed
 ,Sugarloaf Outdoor Center,trail,closed,,false,,Fifty,most_difficult,false,false,closed
-,King Pine,trail,open,false,false,,Flume,most_difficult,false,false,open
+,King Pine,trail,closed,false,false,,Flume,most_difficult,false,false,closed
 ,King Pine,trail,closed,false,false,,Freds Pitch Glade,most_difficult,false,false,closed
 ,SuperQuad,trail,open,false,true,,Gin Pole,more_difficult,false,false,grooming
 ,Brackett Basin,trail,closed,false,false,,Golden Road,extremely_difficult,false,false,closed
