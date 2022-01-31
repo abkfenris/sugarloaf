@@ -133,7 +133,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Brackett Basin,trail,closed,false,false,,Slashfire,extremely_difficult,false,false,closed
 ,Skyline,trail,open,false,true,,Sluice,more_difficult,false,false,grooming
 ,Skyline,trail,closed,false,false,,Sluice Chute,most_difficult,false,false,closed
-,Skyline,trail,closed,false,false,,Sluice Headwall,most_difficult,false,false,closed
+,Skyline,trail,closed,true,false,,Sluice Headwall,most_difficult,false,false,closed
 ,Base Area,trail,open,false,true,,Snowbrook,easier,false,false,grooming
 ,Sugarloaf Outdoor Center,trail,open,,false,,Snowbrook Trail,more_difficult,false,false,open
 ,Sugarloaf Outdoor Center,trail,closed,,false,,South Horn,most_difficult,false,false,closed
@@ -178,7 +178,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Skyline,trail,open,false,false,,Upper Winters Way,extremely_difficult,false,false,open
 ,Sugarloaf Outdoor Center,trail,closed,,false,,V2,more_difficult,false,false,closed
 ,Sugarloaf Outdoor Center,trail,open,,false,,Warming Hut Trail,easier,false,false,open
-,Skyline,trail,closed,false,false,,Wedge,most_difficult,false,false,closed
+,Skyline,trail,closed,true,false,,Wedge,most_difficult,false,false,closed
 ,Sugarloaf Outdoor Center,trail,closed,,false,,West Branch,more_difficult,false,false,closed
 ,West Mountain,trail,open,false,true,,West Mountain X-Cut,easier,false,false,grooming
 ,Skyline,trail,closed,false,false,,West Sluice Chute,most_difficult,false,false,closed
