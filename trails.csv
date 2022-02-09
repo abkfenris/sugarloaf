@@ -112,7 +112,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,SuperQuad,trail,open,false,true,,Pinch,more_difficult,false,false,grooming
 ,Snowfields™ Summit,trail,closed,false,false,,Powder Keg,extremely_difficult,false,false,closed
 ,Sugarloaf Outdoor Center,trail,open,,false,,Pretty Bog,easier,false,false,open
-,West Mountain,trail,closed,false,false,,Pulaski,most_difficult,false,false,closed
+,West Mountain,trail,open,false,false,,Pulaski,most_difficult,false,false,open
 ,Snowfields™ Summit,trail,closed,false,false,,Pure Heat,extremely_difficult,false,false,closed
 ,Sugarloaf Outdoor Center,trail,closed,,false,,Race Loop,most_difficult,false,false,closed
 ,West Mountain,trail,closed,false,false,,Raker Tooth Glade,most_difficult,false,false,closed
