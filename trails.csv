@@ -26,7 +26,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Timberline,trail,open,false,false,,Buckskin,more_difficult,false,false,open
 ,Brackett Basin,trail,open,false,false,,Can't Dog One,extremely_difficult,false,false,open
 ,Brackett Basin,trail,open,false,false,,Can't Dog Two,extremely_difficult,false,false,open
-,SuperQuad,trail,open,true,true,,Candy Side,more_difficult,false,false,grooming
+,SuperQuad,trail,open,false,true,,Candy Side,more_difficult,false,false,grooming
 ,Skyline,trail,open,false,false,,Cant Hook Glade,most_difficult,false,false,open
 ,King Pine,trail,open,false,false,,Choker,most_difficult,false,false,open
 ,Timberline,trail,open,false,false,,Cinderhoe,more_difficult,false,false,open
@@ -88,7 +88,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Whiffletree,trail,open,false,false,,Lower Springboard,more_difficult,false,false,open
 ,Whiffletree,trail,open,false,false,,Lower Stubs,easier,false,false,open
 ,Timberline,trail,open,false,false,,Lower Timberline,easier,false,false,open
-,SuperQuad,trail,open,true,true,,Lower Tote Road,easier,false,false,grooming
+,SuperQuad,trail,open,false,true,,Lower Tote Road,easier,false,false,grooming
 ,West Mountain,trail,open,false,false,,Lower West Mountain,easier,false,false,open
 ,Whiffletree,trail,open,false,true,,Lower Whiffletree,easier,false,false,grooming
 ,West Mountain,trail,open,false,true,,Lower Windrow,easier,false,false,grooming
