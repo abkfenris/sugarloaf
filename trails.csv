@@ -32,7 +32,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Timberline,trail,closed,false,false,,Cinderhoe,more_difficult,false,false,closed
 ,Whiffletree,trail,open,false,false,,Condo X-Cut,easier,false,false,open
 ,Skyline,trail,closed,false,false,,Cribworks,extremely_difficult,false,false,closed
-,Whiffletree,trail,open,false,false,,Cross Haul,easier,false,false,open
+,Whiffletree,trail,closed,false,false,,Cross Haul,easier,false,false,closed
 ,SuperQuad,trail,closed,false,false,,Double Bitter,most_difficult,false,false,closed
 ,Timberline,trail,closed,false,false,,Dropline Glade,most_difficult,false,false,closed
 ,Sugarloaf Outdoor Center,trail,closed,,false,,East Branch,more_difficult,false,false,closed
@@ -51,7 +51,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,West Mountain,trail,open,false,true,,Good Chance X-Cut,easier,false,false,grooming
 ,West Mountain,trail,closed,false,false,,Greenhorn Glade,more_difficult,false,false,closed
 ,Snowfields™ Summit,trail,closed,false,false,,Hard Tack,most_difficult,false,false,closed
-,King Pine,trail,open,false,true,,Haulback,most_difficult,false,false,grooming
+,King Pine,trail,closed,false,true,,Haulback,most_difficult,false,false,grooming
 ,SuperQuad,trail,open,false,true,,Hayburner,most_difficult,false,false,grooming
 ,SuperQuad,trail,open,false,true,,Haywire,more_difficult,false,false,grooming
 ,Snowfields™ Summit,trail,closed,false,false,,Hell's Gate,extremely_difficult,false,false,closed
@@ -149,7 +149,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Base Area,trail,open,false,true,,TheBirches,easier,false,false,grooming
 ,Base Area,trail,open,false,true,,TheLanding,easier,false,false,grooming
 ,Timberline,trail,closed,false,false,,Tin Pants,more_difficult,false,false,closed
-,Whiffletree,trail,open,false,true,,Tohaul,more_difficult,false,false,grooming
+,Whiffletree,trail,closed,false,true,,Tohaul,more_difficult,false,false,grooming
 ,Skyline,trail,open,true,true,,Tote Road,more_difficult,false,false,grooming
 ,Timberline,trail,open,false,false,,Tote Road Ext,more_difficult,false,false,open
 ,Double Runner,trail,open,false,false,,Tote Road X-Cut,more_difficult,false,false,open
