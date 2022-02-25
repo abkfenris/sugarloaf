@@ -150,7 +150,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Base Area,trail,open,false,true,,TheLanding,easier,false,false,grooming
 ,Timberline,trail,closed,false,false,,Tin Pants,more_difficult,false,false,closed
 ,Whiffletree,trail,on_hold,false,true,,Tohaul,more_difficult,false,false,grooming
-,Skyline,trail,open,false,true,,Tote Road,more_difficult,false,false,grooming
+,Skyline,trail,open,true,true,,Tote Road,more_difficult,false,false,grooming
 ,Timberline,trail,closed,false,false,,Tote Road Ext,more_difficult,false,false,closed
 ,Double Runner,trail,open,false,false,,Tote Road X-Cut,more_difficult,false,false,open
 ,Skyline,trail,closed,false,false,,Upper Binder,most_difficult,false,false,closed
