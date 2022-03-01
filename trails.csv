@@ -161,9 +161,9 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Whiffletree,trail,open,false,true,,Upper Cruiser,more_difficult,false,false,grooming
 ,Skyline,trail,open,false,false,,Upper Double Bitter,most_difficult,false,false,open
 ,West Mountain,trail,open,false,false,,Upper Glancer,easier,false,false,open
-,Skyline,trail,open,false,false,,Upper Gondola Line,extremely_difficult,false,false,open
+,Skyline,trail,open,false,true,,Upper Gondola Line,extremely_difficult,false,false,grooming
 ,Brackett Basin,trail,closed,false,false,,Upper Kennebec Glade,most_difficult,false,false,closed
-,Skyline,trail,open,false,false,,Upper Narrow Gauge,most_difficult,false,false,open
+,Skyline,trail,open,false,true,,Upper Narrow Gauge,most_difficult,false,false,grooming
 ,Whiffletree,trail,closed,false,false,,Upper Pole Line,more_difficult,false,false,closed
 ,Whiffletree,trail,closed,false,false,,Upper Rookie River Glade,most_difficult,false,false,closed
 ,West Mountain,trail,open,false,false,,Upper Scoot,more_difficult,false,false,open
@@ -182,7 +182,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,Sugarloaf Outdoor Center,trail,closed,,false,,West Branch,more_difficult,false,false,closed
 ,West Mountain,trail,closed,false,false,,West Mountain X-Cut,easier,false,false,closed
 ,Skyline,trail,open,false,false,,West Sluice Chute,most_difficult,false,false,open
-,Skyline,trail,closed,false,false,,White Nitro,extremely_difficult,false,false,closed
+,Skyline,trail,open,false,true,,White Nitro,extremely_difficult,false,false,grooming
 ,Snowfields™ Summit,trail,closed,false,false,,White Nitro Ext,extremely_difficult,false,false,closed
 ,King Pine,trail,open,false,true,,Widowmaker,most_difficult,false,false,grooming
 ,West Mountain,trail,open,false,false,,Windrow Ext,easier,false,false,open
