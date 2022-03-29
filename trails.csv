@@ -109,7 +109,7 @@ resort_id,sector,type,opening,snowmaking,grooming,notes,name,subtype,gladed_trai
 ,SuperQuad,trail,open,false,true,,Peavy X-Cut,easier,false,false,grooming
 ,Double Runner,trail,closed,,false,,Picaroon,easier,false,false,closed
 ,Skyline,trail,open,false,false,,Pick Pole,more_difficult,false,false,open
-,SuperQuad,trail,open,false,true,,Pinch,more_difficult,false,false,grooming
+,SuperQuad,trail,open,true,true,,Pinch,more_difficult,false,false,grooming
 ,Snowfields™ Summit,trail,closed,false,false,,Powder Keg,extremely_difficult,false,false,closed
 ,Sugarloaf Outdoor Center,trail,open,,false,,Pretty Bog,easier,false,false,open
 ,West Mountain,trail,closed,false,false,,Pulaski,most_difficult,false,false,closed
