@@ -155,7 +155,7 @@ resort_id,sector,type,opening,snowmaking,grooming,name,status,groomed,snowMaking
 ,Double Runner,trail,open,false,false,Tote Road X-Cut,open,no,no,Intermediate,,more_difficult,false,false,open,,,
 ,Skyline,trail,closed,false,false,Upper Binder,closed,no,no,Advanced,,most_difficult,false,false,closed,,,
 ,King Pine,trail,closed,false,false,Upper Boomauger,closed,no,no,Advanced,,most_difficult,false,false,closed,,,
-,Skyline,trail,closed,false,false,Upper Bubblecuffer,closed,no,no,Expert,,extremely_difficult,false,false,closed,,,
+,Skyline,trail,open,false,false,Upper Bubblecuffer,open,no,no,Expert,,extremely_difficult,false,false,open,,,
 ,Whiffletree,trail,closed,false,false,Upper Buckboard,closed,no,no,Intermediate,,more_difficult,false,false,closed,,,
 ,SuperQuad,trail,open,false,false,Upper Competition Hill,open,no,no,Advanced,,most_difficult,false,false,open,,,
 ,Whiffletree,trail,open,false,false,Upper Cruiser,open,no,no,Intermediate,,more_difficult,false,false,open,,,
@@ -175,7 +175,7 @@ resort_id,sector,type,opening,snowmaking,grooming,name,status,groomed,snowMaking
 ,West Mountain,trail,open,false,false,Upper West Mountain,open,no,no,Intermediate,,easier,false,false,open,,,
 ,Whiffletree,trail,open,false,true,Upper Whiffletree,open,yes,no,Intermediate,,more_difficult,false,false,grooming,,,
 ,West Mountain,trail,open,false,false,Upper Windrow,open,no,no,Intermediate,,more_difficult,false,false,open,,,
-,Skyline,trail,closed,false,false,Upper Winters Way,closed,no,no,Expert,,extremely_difficult,false,false,closed,,,
+,Skyline,trail,open,false,false,Upper Winters Way,open,no,no,Expert,,extremely_difficult,false,false,open,,,
 ,Sugarloaf Outdoor Center,trail,closed,,false,V2,closed,no,,Intermediate,,more_difficult,false,false,closed,no,no,no
 ,Sugarloaf Outdoor Center,trail,open,,false,Warming Hut Trail,open,no,,Novice,,easier,false,false,open,yes,no,yes
 ,Skyline,trail,open,false,false,Wedge,open,no,no,Advanced,,most_difficult,false,false,open,,,
