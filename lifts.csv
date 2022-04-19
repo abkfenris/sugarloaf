@@ -1,14 +1,14 @@
 resort_id,sector,type,opening,hours,notes,vertical,name,openTime,closeTime,status,statusDetail,subtype,persons,global_status
 ,Skyline,T-Bar,closed,,,,#3 T-Bar/Bateau,,,closed,,Lift,,closed
-,Double Runner,Double Chair,open,,,,Double Runner East,08:30,15:50,open,,Chairlift,2.0,open
+,Double Runner,Double Chair,scheduled,,,,Double Runner East,08:30,15:50,scheduled,,Chairlift,2.0,scheduled
 ,Double Runner,Double Chair,closed,,,,Double Runner West,,,closed,,Chairlift,2.0,closed
 ,King Pine,High Capacity Fixed Grip Quad,closed,,,,King Pine,,,closed,,Chairlift,4.0,closed
 ,Base Area,Carpet,closed,,,,Moose-calator,,,closed,,Carpet,,closed
 ,Base Area,Double Chair,closed,,,,Sawduster,,,closed,,Chairlift,4.0,closed
 ,Base Area,Double Chair,closed,,,,Skidway,,,closed,,Chairlift,3.0,closed
-,Skyline,High Speed Fixed Grip Quad,open,,,,Skyline,08:30,15:50,open,,Chairlift,4.0,open
+,Skyline,High Speed Fixed Grip Quad,scheduled,,,,Skyline,08:30,15:50,scheduled,,Chairlift,4.0,scheduled
 ,Base Area,Triple Chair,closed,,,,Snubber,,,closed,,Chairlift,3.0,closed
-,SuperQuad,High Speed Detachable Quad,open,,,,SuperQuad,08:30,15:50,open,,Chairlift,4.0,open
+,SuperQuad,High Speed Detachable Quad,scheduled,,,,SuperQuad,08:30,15:50,scheduled,,Chairlift,4.0,scheduled
 ,Timberline,High Capacity Fixed Grip Quad,closed,,,,Timberline,,,closed,,Chairlift,4.0,closed
 ,West Mountain,Double Chair,closed,,,,West Mountain,,,closed,,Chairlift,2.0,closed
 ,Whiffletree,High Speed Detachable Quad,closed,,,,Whiffletree SuperQuad,,,closed,,Chairlift,4.0,closed
