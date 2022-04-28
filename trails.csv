@@ -82,7 +82,7 @@ resort_id,sector,type,opening,snowmaking,grooming,name,status,groomed,snowMaking
 ,Whiffletree,trail,closed,false,false,Lower Pole Line,closed,no,no,Novice,,easier,false,false,closed,,,
 ,Whiffletree,trail,closed,false,false,Lower Rookie River Glade,closed,no,no,Intermediate,,more_difficult,false,false,closed,,,
 ,West Mountain,trail,open,false,false,Lower Scoot,open,no,no,Novice,,easier,false,false,open,,,
-,SuperQuad,trail,open,false,false,Lower Sheerboom,open,no,no,Advanced,,most_difficult,false,false,open,,,
+,SuperQuad,trail,closed,false,false,Lower Sheerboom,closed,no,no,Advanced,,most_difficult,false,false,closed,,,
 ,SuperQuad,trail,open,false,false,Lower Skidder,open,no,no,Expert,,extremely_difficult,false,false,open,,,
 ,Skyline,trail,open,false,false,Lower Spillway,open,no,no,Intermediate,,more_difficult,false,false,open,,,
 ,Whiffletree,trail,closed,false,false,Lower Springboard,closed,no,no,Intermediate,,more_difficult,false,false,closed,,,
@@ -128,7 +128,7 @@ resort_id,sector,type,opening,snowmaking,grooming,name,status,groomed,snowMaking
 ,Sugarloaf Outdoor Center,trail,closed,,false,S-Turns,closed,no,,Novice,,easier,false,false,closed,no,no,no
 ,Double Runner,trail,open,false,false,Schipper's Streak,open,no,no,Novice,,easier,false,false,open,,,
 ,Sugarloaf Outdoor Center,trail,closed,,false,Seven Bridges,closed,no,,Intermediate,,more_difficult,false,false,closed,no,no,no
-,SuperQuad,trail,open,false,false,Sheerboom,open,no,no,Advanced,,most_difficult,false,false,open,,,
+,SuperQuad,trail,closed,false,false,Sheerboom,closed,no,no,Advanced,,most_difficult,false,false,closed,,,
 ,Whiffletree,trail,open,false,false,Slasher,open,no,no,Intermediate,,more_difficult,false,false,open,,,
 ,Brackett Basin,trail,closed,false,false,Slashfire,closed,no,no,Expert,,extremely_difficult,false,false,closed,,,
 ,Skyline,trail,open,false,false,Sluice,open,no,no,Intermediate,,more_difficult,false,false,open,,,
