@@ -161,7 +161,7 @@ resort_id,sector,type,opening,snowmaking,grooming,name,status,groomed,snowMaking
 ,Whiffletree,trail,closed,false,false,Upper Cruiser,closed,no,no,Intermediate,,more_difficult,false,false,closed,,,
 ,Skyline,trail,open,false,false,Upper Double Bitter,open,no,no,Advanced,,most_difficult,false,false,open,,,
 ,West Mountain,trail,closed,false,false,Upper Glancer,closed,no,no,Novice,,easier,false,false,closed,,,
-,Skyline,trail,open,false,true,Upper Gondola Line,open,yes,no,Expert,,extremely_difficult,false,false,grooming,,,
+,Skyline,trail,open,false,false,Upper Gondola Line,open,no,no,Expert,,extremely_difficult,false,false,open,,,
 ,Brackett Basin,trail,closed,false,false,Upper Kennebec Glade,closed,no,no,Advanced,,most_difficult,false,false,closed,,,
 ,Skyline,trail,open,false,true,Upper Narrow Gauge,open,yes,no,Advanced,,most_difficult,false,false,grooming,,,
 ,Whiffletree,trail,closed,false,false,Upper Pole Line,closed,no,no,Intermediate,,more_difficult,false,false,closed,,,
